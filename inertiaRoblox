@@ -1,0 +1,1283 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local InertiaRoblox = Instance.new("ScreenGui")
+local dropdown = Instance.new("Frame")
+local universal = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local universaldrop = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local clicktp = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local fly = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local highjump = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local noclip = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local superspeed = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
+local TPTO = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
+local resetpower = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
+local hub = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local hubdrop = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local Speedrunsim = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
+local dahoodfaded = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
+local vghub = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint")
+local raf = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local UITextSizeConstraint_12 = Instance.new("UITextSizeConstraint")
+local owlhub = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local UITextSizeConstraint_13 = Instance.new("UITextSizeConstraint")
+local Eclipse = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local UITextSizeConstraint_14 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_15 = Instance.new("UITextSizeConstraint")
+local settingsbutton = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local settingsdrop = Instance.new("Frame")
+local UICorner_19 = Instance.new("UICorner")
+local victimName = Instance.new("TextBox")
+local UICorner_20 = Instance.new("UICorner")
+local UITextSizeConstraint_16 = Instance.new("UITextSizeConstraint")
+local flyK = Instance.new("TextBox")
+local UICorner_21 = Instance.new("UICorner")
+local UITextSizeConstraint_17 = Instance.new("UITextSizeConstraint")
+local setflyKey = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local UITextSizeConstraint_18 = Instance.new("UITextSizeConstraint")
+local killinertia = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local UITextSizeConstraint_19 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_20 = Instance.new("UITextSizeConstraint")
+local credits = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local creditsdrop = Instance.new("Frame")
+local UICorner_25 = Instance.new("UICorner")
+local creditstext = Instance.new("TextLabel")
+local UITextSizeConstraint_21 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_22 = Instance.new("UITextSizeConstraint")
+local logo = Instance.new("ImageLabel")
+local openframe = Instance.new("Frame")
+local anotherlogo = Instance.new("ImageLabel")
+local UICorner_26 = Instance.new("UICorner")
+local title = Instance.new("TextLabel")
+local UITextSizeConstraint_23 = Instance.new("UITextSizeConstraint")
+local startInertia = Instance.new("TextButton")
+local UITextSizeConstraint_24 = Instance.new("UITextSizeConstraint")
+local UICorner_27 = Instance.new("UICorner")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+InertiaRoblox.Name = "InertiaRoblox"
+InertiaRoblox.Parent = game.CoreGui
+InertiaRoblox.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+dropdown.Name = "dropdown"
+dropdown.Parent = InertiaRoblox
+dropdown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+dropdown.BackgroundTransparency = 1.000
+dropdown.Size = UDim2.new(1.27827823, 0, 0.198641762, 0)
+dropdown.Visible = false
+
+universal.Name = "universal"
+universal.Parent = dropdown
+universal.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+universal.Position = UDim2.new(0.010963195, 0, 0.188034192, 0)
+universal.Size = UDim2.new(0.148756444, 0, 0.299246937, 0)
+universal.Font = Enum.Font.SciFi
+universal.Text = "UNIVERSAL "
+universal.TextColor3 = Color3.fromRGB(255, 255, 255)
+universal.TextScaled = true
+universal.TextSize = 14.000
+universal.TextStrokeTransparency = 0.000
+universal.TextWrapped = true
+
+UICorner.Parent = universal
+
+universaldrop.Name = "universaldrop"
+universaldrop.Parent = universal
+universaldrop.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+universaldrop.BackgroundTransparency = 0.500
+universaldrop.BorderSizePixel = 0
+universaldrop.Position = UDim2.new(0, 0, 1, 0)
+universaldrop.Size = UDim2.new(1, 0, 10.485714, 0)
+universaldrop.Visible = false
+
+UICorner_2.Parent = universaldrop
+
+clicktp.Name = "clicktp"
+clicktp.Parent = universaldrop
+clicktp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+clicktp.BackgroundTransparency = 0.700
+clicktp.Position = UDim2.new(0, 0, 0.294609159, 0)
+clicktp.Size = UDim2.new(1, 0, 0.136239782, 0)
+clicktp.Font = Enum.Font.SciFi
+clicktp.Text = "Click Tp"
+clicktp.TextColor3 = Color3.fromRGB(255, 255, 255)
+clicktp.TextScaled = true
+clicktp.TextSize = 14.000
+clicktp.TextWrapped = true
+
+UICorner_3.Parent = clicktp
+
+UITextSizeConstraint.Parent = clicktp
+UITextSizeConstraint.MaxTextSize = 49
+
+fly.Name = "fly"
+fly.Parent = universaldrop
+fly.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+fly.BackgroundTransparency = 0.700
+fly.Position = UDim2.new(0, 0, 0.158646792, 0)
+fly.Size = UDim2.new(1, 0, 0.136239782, 0)
+fly.Font = Enum.Font.SciFi
+fly.Text = "Fly"
+fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+fly.TextScaled = true
+fly.TextSize = 14.000
+fly.TextWrapped = true
+
+UICorner_4.Parent = fly
+
+UITextSizeConstraint_2.Parent = fly
+UITextSizeConstraint_2.MaxTextSize = 49
+
+highjump.Name = "highjump"
+highjump.Parent = universaldrop
+highjump.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+highjump.BackgroundTransparency = 0.700
+highjump.Position = UDim2.new(0, 0, 0.703102112, 0)
+highjump.Size = UDim2.new(1, 0, 0.136239782, 0)
+highjump.Font = Enum.Font.SciFi
+highjump.Text = "High Jump"
+highjump.TextColor3 = Color3.fromRGB(255, 255, 255)
+highjump.TextScaled = true
+highjump.TextSize = 14.000
+highjump.TextWrapped = true
+
+UICorner_5.Parent = highjump
+
+UITextSizeConstraint_3.Parent = highjump
+UITextSizeConstraint_3.MaxTextSize = 45
+
+noclip.Name = "noclip"
+noclip.Parent = universaldrop
+noclip.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+noclip.BackgroundTransparency = 0.700
+noclip.Position = UDim2.new(0, 0, 0.0225303136, 0)
+noclip.Size = UDim2.new(1, 0, 0.136239782, 0)
+noclip.Font = Enum.Font.SciFi
+noclip.Text = "Noclip"
+noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+noclip.TextScaled = true
+noclip.TextSize = 14.000
+noclip.TextWrapped = true
+
+UICorner_6.Parent = noclip
+
+UITextSizeConstraint_4.Parent = noclip
+UITextSizeConstraint_4.MaxTextSize = 49
+
+superspeed.Name = "superspeed"
+superspeed.Parent = universaldrop
+superspeed.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+superspeed.BackgroundTransparency = 0.700
+superspeed.Position = UDim2.new(0, 0, 0.564558268, 0)
+superspeed.Size = UDim2.new(1, 0, 0.136239782, 0)
+superspeed.Font = Enum.Font.SciFi
+superspeed.Text = "Super Speed"
+superspeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+superspeed.TextScaled = true
+superspeed.TextSize = 14.000
+superspeed.TextWrapped = true
+
+UICorner_7.Parent = superspeed
+
+UITextSizeConstraint_5.Parent = superspeed
+UITextSizeConstraint_5.MaxTextSize = 36
+
+TPTO.Name = "TPTO"
+TPTO.Parent = universaldrop
+TPTO.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TPTO.BackgroundTransparency = 0.700
+TPTO.Position = UDim2.new(0, 0, 0.430874407, 0)
+TPTO.Size = UDim2.new(1, 0, 0.136239782, 0)
+TPTO.Font = Enum.Font.SciFi
+TPTO.Text = "Teleport To Player"
+TPTO.TextColor3 = Color3.fromRGB(255, 255, 255)
+TPTO.TextScaled = true
+TPTO.TextSize = 14.000
+TPTO.TextWrapped = true
+
+UICorner_8.Parent = TPTO
+
+UITextSizeConstraint_6.Parent = TPTO
+UITextSizeConstraint_6.MaxTextSize = 24
+
+resetpower.Name = "resetpower"
+resetpower.Parent = universaldrop
+resetpower.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+resetpower.BackgroundTransparency = 0.700
+resetpower.Position = UDim2.new(0, 0, 0.840555012, 0)
+resetpower.Size = UDim2.new(1, 0, 0.136239782, 0)
+resetpower.Font = Enum.Font.SciFi
+resetpower.Text = "Reset Walkspeed and Jump Power"
+resetpower.TextColor3 = Color3.fromRGB(255, 255, 255)
+resetpower.TextScaled = true
+resetpower.TextSize = 14.000
+resetpower.TextWrapped = true
+
+UICorner_9.Parent = resetpower
+
+UITextSizeConstraint_7.Parent = resetpower
+UITextSizeConstraint_7.MaxTextSize = 49
+
+UITextSizeConstraint_8.Parent = universal
+UITextSizeConstraint_8.MaxTextSize = 34
+
+hub.Name = "hub"
+hub.Parent = dropdown
+hub.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+hub.Position = UDim2.new(0.179326549, 0, 0.188034192, 0)
+hub.Size = UDim2.new(0.148756444, 0, 0.299246937, 0)
+hub.Font = Enum.Font.SciFi
+hub.Text = "GAME HUB"
+hub.TextColor3 = Color3.fromRGB(255, 255, 255)
+hub.TextScaled = true
+hub.TextSize = 14.000
+hub.TextStrokeTransparency = 0.000
+hub.TextWrapped = true
+
+UICorner_10.Parent = hub
+
+hubdrop.Name = "hubdrop"
+hubdrop.Parent = hub
+hubdrop.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+hubdrop.BackgroundTransparency = 0.500
+hubdrop.BorderSizePixel = 0
+hubdrop.Position = UDim2.new(0, 0, 1, 0)
+hubdrop.Size = UDim2.new(1, 0, 9.34285736, 0)
+hubdrop.Visible = false
+
+UICorner_11.Parent = hubdrop
+
+Speedrunsim.Name = "Speedrunsim"
+Speedrunsim.Parent = hubdrop
+Speedrunsim.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Speedrunsim.BackgroundTransparency = 0.700
+Speedrunsim.Position = UDim2.new(0, 0, 0.147487998, 0)
+Speedrunsim.Size = UDim2.new(1, 0, 0.152905196, 0)
+Speedrunsim.Font = Enum.Font.SciFi
+Speedrunsim.Text = "Speed Run Simulator"
+Speedrunsim.TextColor3 = Color3.fromRGB(255, 255, 255)
+Speedrunsim.TextScaled = true
+Speedrunsim.TextSize = 14.000
+Speedrunsim.TextWrapped = true
+
+UICorner_12.Parent = Speedrunsim
+
+UITextSizeConstraint_9.Parent = Speedrunsim
+UITextSizeConstraint_9.MaxTextSize = 49
+
+dahoodfaded.Name = "dahoodfaded"
+dahoodfaded.Parent = hubdrop
+dahoodfaded.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+dahoodfaded.BackgroundTransparency = 0.700
+dahoodfaded.Position = UDim2.new(0, 0, 0.299905181, 0)
+dahoodfaded.Size = UDim2.new(1, 0, 0.152905196, 0)
+dahoodfaded.Font = Enum.Font.SciFi
+dahoodfaded.Text = "Da Hood - Faded"
+dahoodfaded.TextColor3 = Color3.fromRGB(255, 255, 255)
+dahoodfaded.TextScaled = true
+dahoodfaded.TextSize = 14.000
+dahoodfaded.TextWrapped = true
+
+UICorner_13.Parent = dahoodfaded
+
+UITextSizeConstraint_10.Parent = dahoodfaded
+UITextSizeConstraint_10.MaxTextSize = 28
+
+vghub.Name = "vghub"
+vghub.Parent = hubdrop
+vghub.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+vghub.BackgroundTransparency = 0.700
+vghub.Position = UDim2.new(0, 0, 0.755562723, 0)
+vghub.Size = UDim2.new(1, 0, 0.152905196, 0)
+vghub.Font = Enum.Font.SciFi
+vghub.Text = "VG Hub"
+vghub.TextColor3 = Color3.fromRGB(255, 255, 255)
+vghub.TextScaled = true
+vghub.TextSize = 14.000
+vghub.TextWrapped = true
+
+UICorner_14.Parent = vghub
+
+UITextSizeConstraint_11.Parent = vghub
+UITextSizeConstraint_11.MaxTextSize = 49
+
+raf.Name = "raf"
+raf.Parent = hubdrop
+raf.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+raf.BackgroundTransparency = 0.700
+raf.Position = UDim2.new(0, 0, 0.605715573, 0)
+raf.Size = UDim2.new(1, 0, 0.152905196, 0)
+raf.Font = Enum.Font.SciFi
+raf.Text = "Raise A Floppa"
+raf.TextColor3 = Color3.fromRGB(255, 255, 255)
+raf.TextScaled = true
+raf.TextSize = 14.000
+raf.TextWrapped = true
+
+UICorner_15.Parent = raf
+
+UITextSizeConstraint_12.Parent = raf
+UITextSizeConstraint_12.MaxTextSize = 32
+
+owlhub.Name = "owlhub"
+owlhub.Parent = hubdrop
+owlhub.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+owlhub.BackgroundTransparency = 0.700
+owlhub.Position = UDim2.new(0, 0, 0.452810407, 0)
+owlhub.Size = UDim2.new(1, 0, 0.152905196, 0)
+owlhub.Font = Enum.Font.SciFi
+owlhub.Text = "Owlhub"
+owlhub.TextColor3 = Color3.fromRGB(255, 255, 255)
+owlhub.TextScaled = true
+owlhub.TextSize = 14.000
+owlhub.TextWrapped = true
+
+UICorner_16.Parent = owlhub
+
+UITextSizeConstraint_13.Parent = owlhub
+UITextSizeConstraint_13.MaxTextSize = 49
+
+Eclipse.Name = "Eclipse"
+Eclipse.Parent = hubdrop
+Eclipse.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Eclipse.BackgroundTransparency = 0.700
+Eclipse.Position = UDim2.new(0, 0, -0.00279593468, 0)
+Eclipse.Size = UDim2.new(1, 0, 0.152905196, 0)
+Eclipse.Font = Enum.Font.SciFi
+Eclipse.Text = "Eclipse HUB"
+Eclipse.TextColor3 = Color3.fromRGB(255, 255, 255)
+Eclipse.TextScaled = true
+Eclipse.TextSize = 14.000
+Eclipse.TextWrapped = true
+
+UICorner_17.Parent = Eclipse
+
+UITextSizeConstraint_14.Parent = Eclipse
+UITextSizeConstraint_14.MaxTextSize = 40
+
+UITextSizeConstraint_15.Parent = hub
+UITextSizeConstraint_15.MaxTextSize = 34
+
+settingsbutton.Name = "settingsbutton"
+settingsbutton.Parent = dropdown
+settingsbutton.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+settingsbutton.Position = UDim2.new(0.348472983, 0, 0.188034192, 0)
+settingsbutton.Size = UDim2.new(0.148756444, 0, 0.299246937, 0)
+settingsbutton.Font = Enum.Font.SciFi
+settingsbutton.Text = "SETTINGS"
+settingsbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+settingsbutton.TextScaled = true
+settingsbutton.TextSize = 14.000
+settingsbutton.TextStrokeTransparency = 0.000
+settingsbutton.TextWrapped = true
+
+UICorner_18.Parent = settingsbutton
+
+settingsdrop.Name = "settingsdrop"
+settingsdrop.Parent = settingsbutton
+settingsdrop.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+settingsdrop.BackgroundTransparency = 0.500
+settingsdrop.BorderSizePixel = 0
+settingsdrop.Position = UDim2.new(0, 0, 1, 0)
+settingsdrop.Size = UDim2.new(1, 0, 9.34285736, 0)
+settingsdrop.Visible = false
+
+UICorner_19.Parent = settingsdrop
+
+victimName.Name = "victimName"
+victimName.Parent = settingsdrop
+victimName.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+victimName.BackgroundTransparency = 0.700
+victimName.Position = UDim2.new(0, 0, 0.0275229365, 0)
+victimName.Size = UDim2.new(1, 0, 0.152905196, 0)
+victimName.Font = Enum.Font.SciFi
+victimName.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+victimName.PlaceholderText = "Enter Players Username Here Not Display Name"
+victimName.Text = ""
+victimName.TextColor3 = Color3.fromRGB(255, 255, 255)
+victimName.TextScaled = true
+victimName.TextSize = 14.000
+victimName.TextWrapped = true
+
+UICorner_20.Parent = victimName
+
+UITextSizeConstraint_16.Parent = victimName
+UITextSizeConstraint_16.MaxTextSize = 36
+
+flyK.Name = "flyK"
+flyK.Parent = settingsdrop
+flyK.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+flyK.BackgroundTransparency = 0.700
+flyK.Position = UDim2.new(0, 0, 0.180428132, 0)
+flyK.Size = UDim2.new(1, 0, 0.152905196, 0)
+flyK.Font = Enum.Font.SciFi
+flyK.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+flyK.PlaceholderText = "Enter The Key You Want For The Fly Keybind Then Click Set Fly Key"
+flyK.Text = ""
+flyK.TextColor3 = Color3.fromRGB(255, 255, 255)
+flyK.TextScaled = true
+flyK.TextSize = 14.000
+flyK.TextWrapped = true
+
+UICorner_21.Parent = flyK
+
+UITextSizeConstraint_17.Parent = flyK
+UITextSizeConstraint_17.MaxTextSize = 48
+
+setflyKey.Name = "setflyKey"
+setflyKey.Parent = settingsdrop
+setflyKey.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+setflyKey.BackgroundTransparency = 0.700
+setflyKey.Position = UDim2.new(0, 0, 0.333333343, 0)
+setflyKey.Size = UDim2.new(1, 0, 0.152905196, 0)
+setflyKey.Font = Enum.Font.SciFi
+setflyKey.Text = "Set Fly Key"
+setflyKey.TextColor3 = Color3.fromRGB(255, 255, 255)
+setflyKey.TextScaled = true
+setflyKey.TextSize = 14.000
+setflyKey.TextWrapped = true
+
+UICorner_22.Parent = setflyKey
+
+UITextSizeConstraint_18.Parent = setflyKey
+UITextSizeConstraint_18.MaxTextSize = 42
+
+killinertia.Name = "killinertia"
+killinertia.Parent = settingsdrop
+killinertia.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+killinertia.BackgroundTransparency = 0.700
+killinertia.Position = UDim2.new(0, 0, 0.486238539, 0)
+killinertia.Size = UDim2.new(1, 0, 0.152905196, 0)
+killinertia.Font = Enum.Font.SciFi
+killinertia.Text = "Destroy Inertia "
+killinertia.TextColor3 = Color3.fromRGB(255, 255, 255)
+killinertia.TextScaled = true
+killinertia.TextSize = 14.000
+killinertia.TextWrapped = true
+
+UICorner_23.Parent = killinertia
+
+UITextSizeConstraint_19.Parent = killinertia
+UITextSizeConstraint_19.MaxTextSize = 32
+
+UITextSizeConstraint_20.Parent = settingsbutton
+UITextSizeConstraint_20.MaxTextSize = 34
+
+credits.Name = "credits"
+credits.Parent = dropdown
+credits.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+credits.Position = UDim2.new(0.514487088, 0, 0.188034192, 0)
+credits.Size = UDim2.new(0.148756444, 0, 0.299246937, 0)
+credits.Font = Enum.Font.SciFi
+credits.Text = "CREDITS"
+credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+credits.TextScaled = true
+credits.TextSize = 14.000
+credits.TextStrokeTransparency = 0.000
+credits.TextWrapped = true
+
+UICorner_24.Parent = credits
+
+creditsdrop.Name = "creditsdrop"
+creditsdrop.Parent = credits
+creditsdrop.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+creditsdrop.BackgroundTransparency = 0.500
+creditsdrop.BorderSizePixel = 0
+creditsdrop.Position = UDim2.new(0, 0, 1, 0)
+creditsdrop.Size = UDim2.new(1, 0, 9.34285736, 0)
+creditsdrop.Visible = false
+
+UICorner_25.Parent = creditsdrop
+
+creditstext.Name = "creditstext"
+creditstext.Parent = creditsdrop
+creditstext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+creditstext.BackgroundTransparency = 1.000
+creditstext.Size = UDim2.new(1, 0, 1, 0)
+creditstext.Font = Enum.Font.SciFi
+creditstext.Text = "Gui by 7843Xploits, Scripts by 7843Xploits, The idea of this and gui design and logo comes from minecraft's inertia utility mod. It has been discontinued so I thought, why not bring it to roblox? Their website is inertiaclient.com and all other minecraft inertia is over there. You can contact me on discord with the tag Weston#7843 so have fun!"
+creditstext.TextColor3 = Color3.fromRGB(255, 255, 255)
+creditstext.TextScaled = true
+creditstext.TextSize = 14.000
+creditstext.TextWrapped = true
+
+UITextSizeConstraint_21.Parent = creditstext
+
+UITextSizeConstraint_22.Parent = credits
+UITextSizeConstraint_22.MaxTextSize = 34
+
+logo.Name = "logo"
+logo.Parent = InertiaRoblox
+logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+logo.BackgroundTransparency = 1.000
+logo.Position = UDim2.new(0.92183578, 0, 0.830502748, 0)
+logo.Size = UDim2.new(0.1001001, 0, 0.169779286, 0)
+logo.Visible = false
+logo.Image = "http://www.roblox.com/asset/?id=11679407170"
+
+openframe.Name = "openframe"
+openframe.Parent = InertiaRoblox
+openframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+openframe.BackgroundTransparency = 1.000
+openframe.Position = UDim2.new(0.238190562, 0, 0.171535328, 0)
+openframe.Size = UDim2.new(0.455455452, 0, 0.655348063, 0)
+
+anotherlogo.Name = "anotherlogo"
+anotherlogo.Parent = openframe
+anotherlogo.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+anotherlogo.Size = UDim2.new(0.997602463, 0, 0.995156586, 0)
+anotherlogo.Image = "http://www.roblox.com/asset/?id=11679407170"
+
+UICorner_26.Parent = anotherlogo
+
+title.Name = "title"
+title.Parent = openframe
+title.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+title.BackgroundTransparency = 0.700
+title.Position = UDim2.new(0.134065941, 0, 0.0829015523, 0)
+title.Size = UDim2.new(0.72732693, 0, 0.142535448, 0)
+title.Font = Enum.Font.SciFi
+title.Text = "Welcome To Inertia Roblox, The Keybind To Open And Close Inertia is Right Shift"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextWrapped = true
+
+UITextSizeConstraint_23.Parent = title
+UITextSizeConstraint_23.MaxTextSize = 40
+
+startInertia.Name = "startInertia"
+startInertia.Parent = openframe
+startInertia.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+startInertia.BackgroundTransparency = 0.700
+startInertia.BorderColor3 = Color3.fromRGB(255, 255, 255)
+startInertia.Position = UDim2.new(0.134065941, 0, 0.295336783, 0)
+startInertia.Size = UDim2.new(0.72732693, 0, 0.461296529, 0)
+startInertia.Font = Enum.Font.SciFi
+startInertia.Text = "START INERTIA"
+startInertia.TextColor3 = Color3.fromRGB(255, 255, 255)
+startInertia.TextScaled = true
+startInertia.TextSize = 14.000
+startInertia.TextTransparency = 0.530
+startInertia.TextWrapped = true
+
+UITextSizeConstraint_24.Parent = startInertia
+
+UICorner_27.Parent = openframe
+
+UIAspectRatioConstraint.Parent = InertiaRoblox
+UIAspectRatioConstraint.AspectRatio = 1.697
+
+-- Scripts:
+
+local function NYWJ_fake_script() -- clicktp.LocalScript 
+	local script = Instance.new('LocalScript', clicktp)
+
+	local UIS = game:GetService("UserInputService")
+	local Player = game.Players.LocalPlayer
+	local Mouse = Player:GetMouse()
+	
+	
+	function GetCharacter()
+		return game.Players.LocalPlayer.Character
+	end
+	
+	function Teleport(pos)
+		local Char = GetCharacter()
+		if Char then
+			Char:MoveTo(pos)
+		end
+	end
+	
+	script.Parent.Parent.clicktp.MouseButton1Click:Connect(function()
+		local button = script.Parent.Parent.clicktp
+		button.BackgroundColor3 = Color3.fromRGB(177, 0, 0)
+		wait(0.05)
+		button.BackgroundColor3 = Color3.fromRGB(0,0,0)
+		UIS.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 and UIS:IsKeyDown(Enum.KeyCode.LeftControl) then
+				Teleport(Mouse.Hit.p)
+			end
+		end)
+	end)
+end
+coroutine.wrap(NYWJ_fake_script)()
+local function EKRQNUO_fake_script() -- fly.LocalScript 
+	local script = Instance.new('LocalScript', fly)
+
+	script.Parent.Parent.fly.MouseButton1Click:Connect(function()
+		repeat wait() 
+		until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Head") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
+		local mouse = game.Players.LocalPlayer:GetMouse() 
+		repeat wait() until mouse
+		local plr = game.Players.LocalPlayer 
+		local torso = plr.Character.Head 
+		local flying = false
+		local deb = true 
+		local ctrl = {f = 0, b = 0, l = 0, r = 0} 
+		local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+		local maxspeed = 400 
+		local speed = 5000 
+	
+		function Fly() 
+			local bg = Instance.new("BodyGyro", torso) 
+			bg.P = 9e4 
+			bg.maxTorque = Vector3.new(9e9, 9e9, 9e9) 
+			bg.cframe = torso.CFrame 
+			local bv = Instance.new("BodyVelocity", torso) 
+			bv.velocity = Vector3.new(0,0.1,0) 
+			bv.maxForce = Vector3.new(9e9, 9e9, 9e9) 
+			repeat wait() 
+				plr.Character.Humanoid.PlatformStand = true 
+				if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then 
+					speed = speed+.5+(speed/maxspeed) 
+					if speed > maxspeed then 
+						speed = maxspeed 
+					end 
+				elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then 
+					speed = speed-1 
+					if speed < 0 then 
+						speed = 0 
+					end 
+				end 
+				if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then 
+					bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+					lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r} 
+				elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then 
+					bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+				else 
+					bv.velocity = Vector3.new(0,0.1,0) 
+				end 
+				bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0) 
+			until not flying 
+			ctrl = {f = 0, b = 0, l = 0, r = 0} 
+			lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+			speed = 0 
+			bg:Destroy() 
+			bv:Destroy() 
+			plr.Character.Humanoid.PlatformStand = false 
+		end 
+		mouse.KeyDown:connect(function(key) 
+			if key:lower() == _G.togglefly then 
+				if flying then flying = false 
+				else 
+					flying = true 
+					Fly() 
+				end 
+			elseif key:lower() == "w" then 
+				ctrl.f = 1 
+			elseif key:lower() == "s" then 
+				ctrl.b = -1 
+			elseif key:lower() == "a" then 
+				ctrl.l = -1 
+			elseif key:lower() == "d" then 
+				ctrl.r = 1 
+			end 
+		end) 
+		mouse.KeyUp:connect(function(key) 
+			if key:lower() == "w" then 
+				ctrl.f = 0 
+			elseif key:lower() == "s" then 
+				ctrl.b = 0 
+			elseif key:lower() == "a" then 
+				ctrl.l = 0 
+			elseif key:lower() == "d" then 
+				ctrl.r = 0 
+			end 
+		end)
+		Fly()
+	end)
+end
+coroutine.wrap(EKRQNUO_fake_script)()
+local function JUFWNJ_fake_script() -- highjump.LocalScript 
+	local script = Instance.new('LocalScript', highjump)
+
+	script.Parent.Parent.highjump.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 200
+	end)
+end
+coroutine.wrap(JUFWNJ_fake_script)()
+local function HGLQ_fake_script() -- noclip.LocalScript 
+	local script = Instance.new('LocalScript', noclip)
+
+	local button = script.Parent.Parent.noclip
+	
+	local Noclip = nil
+	local Clip = nil
+	
+	function truenoclip()
+		Clip = false
+		local function Nocl()
+			if Clip == false and game.Players.LocalPlayer.Character ~= nil then
+				for _,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+					if v:IsA('BasePart') and v.CanCollide and v.Name ~= floatName then
+						v.CanCollide = false
+					end
+				end
+			end
+			wait(0.21) -- basic optimization
+		end
+		Noclip = game:GetService('RunService').Stepped:Connect(Nocl)
+	end
+	
+	function unnoclip()
+		if Noclip then Noclip:Disconnect() end
+		Clip = true
+	end
+	
+	script.Parent.Parent.noclip.MouseButton1Click:Connect(function()
+		if button.BackgroundColor3 == Color3.fromRGB(0,0,0) then
+			truenoclip()
+			button.BackgroundColor3 = Color3.fromRGB(177, 0, 0)
+		elseif button.BackgroundColor3 == Color3.fromRGB(177, 0, 0) then
+			unnoclip()
+			button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		end
+	end)
+end
+coroutine.wrap(HGLQ_fake_script)()
+local function YAUTT_fake_script() -- superspeed.LocalScript 
+	local script = Instance.new('LocalScript', superspeed)
+
+	script.Parent.Parent.superspeed.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+	end)
+end
+coroutine.wrap(YAUTT_fake_script)()
+local function NHNTT_fake_script() -- TPTO.LocalScript 
+	local script = Instance.new('LocalScript', TPTO)
+
+	local tpinput = script.Parent.Parent.Parent.Parent.settings.settingsdrop.victimName
+	
+	script.Parent.Parent.TPTO.MouseButton1Click:Connect(function()
+		local Victim = tpinput.Text
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[Victim].Character.HumanoidRootPart.CFrame
+	
+	end)
+end
+coroutine.wrap(NHNTT_fake_script)()
+local function WPMRCAM_fake_script() -- resetpower.LocalScript 
+	local script = Instance.new('LocalScript', resetpower)
+
+	script.Parent.Parent.resetpower.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+	end)
+end
+coroutine.wrap(WPMRCAM_fake_script)()
+local function HSKI_fake_script() -- universal.LocalScript 
+	local script = Instance.new('LocalScript', universal)
+
+	local button = script.Parent.Parent.universal
+	
+	button.MouseButton1Click:Connect(function()
+		if button.universaldrop.Visible == false then
+			button.universaldrop.Visible = true
+		elseif button.universaldrop.Visible == true then
+			button.universaldrop.Visible = false
+		end
+	end)
+end
+coroutine.wrap(HSKI_fake_script)()
+local function URPVFMS_fake_script() -- Speedrunsim.LocalScript 
+	local script = Instance.new('LocalScript', Speedrunsim)
+
+	local button = script.Parent.Parent.Speedrunsim
+	
+	button.MouseButton1Click:Connect(function()
+		local autofarm = Instance.new("ScreenGui")
+		local main = Instance.new("Frame")
+		local UICorner = Instance.new("UICorner")
+		local topbar = Instance.new("Frame")
+		local UICorner_2 = Instance.new("UICorner")
+		local closebutton = Instance.new("TextButton")
+		local title = Instance.new("TextLabel")
+		local containerframe = Instance.new("Frame")
+		local speed = Instance.new("TextButton")
+		local UICorner_3 = Instance.new("UICorner")
+		local rebirth = Instance.new("TextButton")
+		local UICorner_4 = Instance.new("UICorner")
+		local singlespeed = Instance.new("TextButton")
+		local UICorner_5 = Instance.new("UICorner")
+		local singlerebirth = Instance.new("TextButton")
+		local UICorner_6 = Instance.new("UICorner")
+		local openbutton = Instance.new("TextButton")
+		local UICorner_7 = Instance.new("UICorner")
+	
+		--Properties:
+	
+		autofarm.Name = "autofarm"
+		autofarm.Parent = game.CoreGui
+		autofarm.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	
+		main.Name = "main"
+		main.Parent = autofarm
+		main.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+		main.Position = UDim2.new(0.327329665, 0, 0.294612825, 0)
+		main.Size = UDim2.new(0.345340639, 0, 0.409090906, 0)
+	
+		UICorner.Parent = main
+	
+		topbar.Name = "topbar"
+		topbar.Parent = main
+		topbar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		topbar.Size = UDim2.new(1, 0, 0.0699588507, 0)
+	
+		UICorner_2.Parent = topbar
+	
+		closebutton.Name = "closebutton"
+		closebutton.Parent = topbar
+		closebutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		closebutton.BackgroundTransparency = 1.000
+		closebutton.Position = UDim2.new(0.920634925, 0, 0, 0)
+		closebutton.Size = UDim2.new(0.0793650821, 0, 1, 0)
+		closebutton.Font = Enum.Font.SourceSans
+		closebutton.Text = "X"
+		closebutton.TextColor3 = Color3.fromRGB(170, 0, 0)
+		closebutton.TextScaled = true
+		closebutton.TextSize = 14.000
+		closebutton.TextStrokeColor3 = Color3.fromRGB(170, 0, 0)
+		closebutton.TextWrapped = true
+	
+		title.Name = "title"
+		title.Parent = topbar
+		title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		title.BackgroundTransparency = 1.000
+		title.Size = UDim2.new(0.4988662, 0, 1, 0)
+		title.Font = Enum.Font.SourceSans
+		title.Text = "Speed Run Simulator Autofarm"
+		title.TextColor3 = Color3.fromRGB(255, 255, 255)
+		title.TextScaled = true
+		title.TextSize = 14.000
+		title.TextWrapped = true
+	
+		containerframe.Name = "containerframe"
+		containerframe.Parent = main
+		containerframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		containerframe.BackgroundTransparency = 1.000
+		containerframe.Position = UDim2.new(0, 0, 0.0699588507, 0)
+		containerframe.Size = UDim2.new(1, 0, 0.930041134, 0)
+	
+		speed.Name = "speed"
+		speed.Parent = containerframe
+		speed.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		speed.Position = UDim2.new(0.0453514755, 0, 0.0398230106, 0)
+		speed.Size = UDim2.new(0.31292516, 0, 0.14159292, 0)
+		speed.Font = Enum.Font.SourceSans
+		speed.Text = "Auto Add Speed"
+		speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+		speed.TextScaled = true
+		speed.TextSize = 14.000
+		speed.TextWrapped = true
+	
+		UICorner_3.Parent = speed
+	
+		rebirth.Name = "rebirth"
+		rebirth.Parent = containerframe
+		rebirth.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		rebirth.Position = UDim2.new(0.607709765, 0, 0.0398230106, 0)
+		rebirth.Size = UDim2.new(0.31292516, 0, 0.14159292, 0)
+		rebirth.Font = Enum.Font.SourceSans
+		rebirth.Text = "Auto Rebirth"
+		rebirth.TextColor3 = Color3.fromRGB(0, 0, 0)
+		rebirth.TextScaled = true
+		rebirth.TextSize = 14.000
+		rebirth.TextWrapped = true
+	
+		UICorner_4.Parent = rebirth
+	
+		singlespeed.Name = "singlespeed"
+		singlespeed.Parent = containerframe
+		singlespeed.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		singlespeed.Position = UDim2.new(0.0453514755, 0, 0.278761059, 0)
+		singlespeed.Size = UDim2.new(0.31292516, 0, 0.14159292, 0)
+		singlespeed.Font = Enum.Font.SourceSans
+		singlespeed.Text = "Add Speed"
+		singlespeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+		singlespeed.TextScaled = true
+		singlespeed.TextSize = 14.000
+		singlespeed.TextWrapped = true
+	
+		UICorner_5.Parent = singlespeed
+	
+		singlerebirth.Name = "singlerebirth"
+		singlerebirth.Parent = containerframe
+		singlerebirth.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		singlerebirth.Position = UDim2.new(0.607709765, 0, 0.278761059, 0)
+		singlerebirth.Size = UDim2.new(0.31292516, 0, 0.14159292, 0)
+		singlerebirth.Font = Enum.Font.SourceSans
+		singlerebirth.Text = "Rebirth"
+		singlerebirth.TextColor3 = Color3.fromRGB(0, 0, 0)
+		singlerebirth.TextScaled = true
+		singlerebirth.TextSize = 14.000
+		singlerebirth.TextWrapped = true
+	
+		UICorner_6.Parent = singlerebirth
+	
+		openbutton.Name = "openbutton"
+		openbutton.Parent = autofarm
+		openbutton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		openbutton.Position = UDim2.new(0.0360219255, 0, 0.74242425, 0)
+		openbutton.Size = UDim2.new(0, 153, 0, 42)
+		openbutton.Visible = false
+		openbutton.Font = Enum.Font.SourceSans
+		openbutton.Text = "Open"
+		openbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+		openbutton.TextScaled = true
+		openbutton.TextSize = 14.000
+		openbutton.TextWrapped = true
+	
+		UICorner_7.Parent = openbutton
+	
+		-- Scripts:
+	
+		local function PTOEJB_fake_script() -- main.guihandler 
+			local script = Instance.new('LocalScript', main)
+	
+			local speed = script.Parent.containerframe.speed
+			local closebutton = script.Parent.topbar.closebutton
+			local rebirth = script.Parent.containerframe.rebirth
+			local singles = script.Parent.containerframe.singlespeed
+			local singler = script.Parent.containerframe.singlerebirth
+			local openbutton = script.Parent.Parent.openbutton
+			local mainframe = script.Parent.Parent.main
+			local UIS = game:GetService("UserInputService")
+			local remotes = game:GetService("ReplicatedStorage").Remotes
+	
+			--Autospeed
+			speed.MouseButton1Click:Connect(function()
+				-- Turn Speed Autofarm On
+				if speed.BackgroundColor3 == Color3.fromRGB(255, 0, 0) then
+					speed.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+	
+					while speed.BackgroundColor3 == Color3.fromRGB(0, 255, 0) do
+						remotes.AddSpeed:FireServer()
+						wait()
+					end
+					-- Turn Speed Autofarm Off
+				elseif speed.BackgroundColor3 == Color3.fromRGB(0, 255, 0) then
+					speed.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+				end	
+			end)
+	
+			--AutoRebirth
+			rebirth.MouseButton1Click:Connect(function()
+				--Turn RebirthAutoFarm On
+				if rebirth.BackgroundColor3 == Color3.fromRGB(255, 0, 0) then
+					rebirth.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+					remotes.Rebirth:FireServer()
+					while rebirth.BackgroundColor3 == Color3.fromRGB(0, 255, 0) do
+						remotes.Rebirth:FireServer()
+						wait()
+					end
+					--Turn RebirthAutoFarmOff	
+				elseif rebirth.BackgroundColor3 == Color3.fromRGB(0, 255, 0) then
+					rebirth.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+				end
+			end)
+	
+			singles.MouseButton1Click:Connect(function()
+				--Add Speed Once
+				if singles.BackgroundColor3 == Color3.fromRGB(255, 0, 0) then
+					singles.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+	
+					remotes.AddSpeed:FireServer()
+					wait(0.05)
+					singles.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+				end
+			end)
+	
+			singler.MouseButton1Click:Connect(function()
+				--Add Rebirth Once
+				if singler.BackgroundColor3 == Color3.fromRGB(255, 0, 0) then
+					singler.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+	
+					remotes.Rebirth:FireServer()
+					wait(0.05)
+					singler.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+				end
+			end)
+	
+			--openandclose functions 
+	
+			--keybinds
+			UIS.InputBegan:Connect(function(key)
+				if key.KeyCode == Enum.KeyCode.LeftAlt then
+					if mainframe.Visible == true then
+						mainframe.Visible = false
+						openbutton.Visible = true
+	
+					elseif key.KeyCode == Enum.KeyCode.LeftAlt then
+						if mainframe.Visible == false then
+							mainframe.Visible = true
+							openbutton.Visible = false
+						end
+					end
+				end
+			end)
+	
+			closebutton.MouseButton1Click:Connect(function()
+				mainframe.Visible = false
+				openbutton.Visible = true
+			end)
+	
+			openbutton.MouseButton1Click:Connect(function()
+				mainframe.Visible = true
+				openbutton.Visible = false
+			end)
+	
+	
+	
+	
+	
+		end
+		coroutine.wrap(PTOEJB_fake_script)()
+		local function XFUYEN_fake_script() -- main.SmoothDrag 
+			local script = Instance.new('LocalScript', main)
+	
+			--// _ Variables _ \\--
+	
+			local UserInputService = game:GetService("UserInputService")
+	
+			local SmoothDragToggle
+			local SmoothDragInput
+			local SmoothDragStart
+	
+			local SmoothDragSpeed = 0.1
+	
+			--// _ Smooth Drag _ \\--
+	
+			function SmoothDrag(Frame)
+	
+				local function UpdateSmoothDragInput(Input)
+					local Delta = Input.Position - SmoothDragStart
+					local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+					game:GetService("TweenService"):Create(Frame, TweenInfo.new(SmoothDragSpeed), {Position = Position}):Play()
+				end
+	
+				Frame.InputBegan:Connect(function(Input)
+					if (Input.UserInputType == Enum.UserInputType.MouseButton1 or Input.UserInputType == Enum.UserInputType.Touch) and UserInputService:GetFocusedTextBox() == nil then
+						SmoothDragToggle = true
+						SmoothDragStart = Input.Position
+						startPos = Frame.Position
+						Input.Changed:Connect(function()
+							if Input.UserInputState == Enum.UserInputState.End then
+								SmoothDragToggle = false
+							end
+						end)
+					end
+				end)
+	
+				Frame.InputChanged:Connect(function(Input)
+					if Input.UserInputType == Enum.UserInputType.MouseMovement or Input.UserInputType == Enum.UserInputType.Touch then
+						SmoothDragInput = Input
+					end
+				end)
+	
+				game:GetService("UserInputService").InputChanged:Connect(function(Input)
+					if Input == SmoothDragInput and SmoothDragToggle then
+						UpdateSmoothDragInput(Input)
+					end
+				end)
+	
+			end
+	
+			SmoothDrag(script.Parent)
+		end
+		coroutine.wrap(XFUYEN_fake_script)()
+	
+	end)
+end
+coroutine.wrap(URPVFMS_fake_script)()
+local function DTDVSR_fake_script() -- dahoodfaded.LocalScript 
+	local script = Instance.new('LocalScript', dahoodfaded)
+
+	local button = script.Parent.Parent.dahoodfaded
+	
+	button.MouseButton1Click:Connect(function()
+		_G.Toggles = "V" -- You can put any keybind
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+	end)
+end
+coroutine.wrap(DTDVSR_fake_script)()
+local function BEJAU_fake_script() -- vghub.LocalScript 
+	local script = Instance.new('LocalScript', vghub)
+
+	local button = script.Parent.Parent.vghub
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+	end)
+end
+coroutine.wrap(BEJAU_fake_script)()
+local function PNKXZU_fake_script() -- raf.LocalScript 
+	local script = Instance.new('LocalScript', raf)
+
+	local button = script.Parent.Parent.raf
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/sETwJi3n'))()
+	end)
+end
+coroutine.wrap(PNKXZU_fake_script)()
+local function IXHT_fake_script() -- owlhub.LocalScript 
+	local script = Instance.new('LocalScript', owlhub)
+
+	local button = script.Parent.Parent.owlhub
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+	end)
+end
+coroutine.wrap(IXHT_fake_script)()
+local function HEOLZ_fake_script() -- Eclipse.LocalScript 
+	local script = Instance.new('LocalScript', Eclipse)
+
+	
+	getgenv().mainKey = "nil"
+	local button = script.Parent.Parent.Eclipse
+	
+	button.MouseButton1Click:Connect(function()
+	
+	
+		local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+	end)
+end
+coroutine.wrap(HEOLZ_fake_script)()
+local function ULYWWMX_fake_script() -- hub.LocalScript 
+	local script = Instance.new('LocalScript', hub)
+
+	local button = script.Parent.Parent.hub
+	
+	button.MouseButton1Click:Connect(function()
+		if button.hubdrop.Visible == false then
+			button.hubdrop.Visible = true
+		elseif button.hubdrop.Visible == true then
+			button.hubdrop.Visible = false
+		end
+	end)
+end
+coroutine.wrap(ULYWWMX_fake_script)()
+local function YNMRR_fake_script() -- setflyKey.LocalScript 
+	local script = Instance.new('LocalScript', setflyKey)
+
+	_G.togglefly = ""
+	
+	local button = script.Parent.Parent.setflyKey
+	local box = script.Parent.Parent.flyK
+	
+	button.MouseButton1Click:Connect(function()
+		_G.togglefly = box.Text
+	end)
+end
+coroutine.wrap(YNMRR_fake_script)()
+local function BOGWF_fake_script() -- killinertia.LocalScript 
+	local script = Instance.new('LocalScript', killinertia)
+
+	local inertia = script.Parent.Parent.Parent.Parent.Parent.Parent.InertiaRoblox
+	
+	script.Parent.Parent.killinertia.MouseButton1Click:Connect(function()
+		inertia:Destroy()
+	end)
+end
+coroutine.wrap(BOGWF_fake_script)()
+local function CBRY_fake_script() -- settingsbutton.LocalScript 
+	local script = Instance.new('LocalScript', settingsbutton)
+
+	local button = script.Parent.Parent.settingsbutton
+	
+	button.MouseButton1Click:Connect(function()
+		if button.settingsdrop.Visible == false then
+			button.settingsdrop.Visible = true
+		elseif button.settingsdrop.Visible == true then
+			button.settingsdrop.Visible = false
+		end
+	end)
+end
+coroutine.wrap(CBRY_fake_script)()
+local function OUNX_fake_script() -- credits.LocalScript 
+	local script = Instance.new('LocalScript', credits)
+
+	local button = script.Parent.Parent.credits
+	
+	button.MouseButton1Click:Connect(function()
+		if button.creditsdrop.Visible == false then
+			button.creditsdrop.Visible = true
+		elseif button.creditsdrop.Visible == true then
+			button.creditsdrop.Visible = false
+		end
+	end)
+end
+coroutine.wrap(OUNX_fake_script)()
+local function AVAV_fake_script() -- InertiaRoblox.openandcloseKey 
+	local script = Instance.new('LocalScript', InertiaRoblox)
+
+	local UIS = game:GetService("UserInputService")
+	local menu = script.Parent.dropdown
+	local logo = script.Parent.logo
+	
+	UIS.InputBegan:Connect(function(input)
+		if input.KeyCode== Enum.KeyCode.RightShift then
+			if menu.Visible == false and logo.Visible == false then
+				menu.Visible = true
+				logo.Visible = true
+			elseif menu.Visible == true and logo.Visible == true then
+				menu.Visible = false
+				logo.Visible = false
+			end
+		end
+	end)
+end
+coroutine.wrap(AVAV_fake_script)()
+local function URQN_fake_script() -- startInertia.LocalScript 
+	local script = Instance.new('LocalScript', startInertia)
+
+	local openframe = script.Parent.Parent.Parent.openframe
+	local main = script.Parent.Parent.Parent.dropdown
+	local logo = script.Parent.Parent.Parent.logo
+	local openscript = script.Parent.Parent.Parent.openandcloseKey
+	
+	script.Parent.Parent.startInertia.MouseButton1Click:Connect(function()
+		main.Visible = true
+		logo.Visible = true
+		wait(0.1)
+		openframe:Destroy()
+	end)
+end
+coroutine.wrap(URQN_fake_script)()
