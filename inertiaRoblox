@@ -1,3 +1,9 @@
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "Inertia Has Been Loaded.",
+	Text = "Press Right Shift To Open Interface.",
+	Duration = 5
+})
+
 -- Instances:
 
 local InertiaRoblox = Instance.new("ScreenGui")
@@ -47,38 +53,40 @@ local owlhub = Instance.new("TextButton")
 local UITextSizeConstraint_18 = Instance.new("UITextSizeConstraint")
 local Eclipse = Instance.new("TextButton")
 local UITextSizeConstraint_19 = Instance.new("UITextSizeConstraint")
+local infyeild = Instance.new("TextButton")
 local UITextSizeConstraint_20 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_21 = Instance.new("UITextSizeConstraint")
 local visuals = Instance.new("TextButton")
 local combatdrop = Instance.new("Frame")
 local UICorner_3 = Instance.new("UICorner")
 local esp = Instance.new("TextButton")
-local UITextSizeConstraint_21 = Instance.new("UITextSizeConstraint")
 local UITextSizeConstraint_22 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_23 = Instance.new("UITextSizeConstraint")
 local settingsbutton = Instance.new("TextButton")
 local settingsdrop = Instance.new("Frame")
 local UICorner_4 = Instance.new("UICorner")
 local killinertia = Instance.new("TextButton")
-local UITextSizeConstraint_23 = Instance.new("UITextSizeConstraint")
 local UITextSizeConstraint_24 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_25 = Instance.new("UITextSizeConstraint")
 local tabs = Instance.new("Frame")
 local combat = Instance.new("TextButton")
-local UITextSizeConstraint_25 = Instance.new("UITextSizeConstraint")
-local gamehub = Instance.new("TextButton")
 local UITextSizeConstraint_26 = Instance.new("UITextSizeConstraint")
-local settings = Instance.new("TextButton")
+local gamehub = Instance.new("TextButton")
 local UITextSizeConstraint_27 = Instance.new("UITextSizeConstraint")
-local universal_2 = Instance.new("TextButton")
+local settings = Instance.new("TextButton")
 local UITextSizeConstraint_28 = Instance.new("UITextSizeConstraint")
-local close = Instance.new("TextButton")
+local universal_2 = Instance.new("TextButton")
 local UITextSizeConstraint_29 = Instance.new("UITextSizeConstraint")
-local title = Instance.new("TextLabel")
+local close = Instance.new("TextButton")
 local UITextSizeConstraint_30 = Instance.new("UITextSizeConstraint")
+local title = Instance.new("TextLabel")
+local UITextSizeConstraint_31 = Instance.new("UITextSizeConstraint")
 local logo = Instance.new("ImageLabel")
 
 --Properties:
 
 InertiaRoblox.Name = "InertiaRoblox"
-InertiaRoblox.Parent = game.CoreGui
+InertiaRoblox.Parent = game.Workspace
 InertiaRoblox.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 UIAspectRatioConstraint.Parent = InertiaRoblox
@@ -482,8 +490,25 @@ Eclipse.TextWrapped = true
 UITextSizeConstraint_19.Parent = Eclipse
 UITextSizeConstraint_19.MaxTextSize = 40
 
-UITextSizeConstraint_20.Parent = hub
-UITextSizeConstraint_20.MaxTextSize = 34
+infyeild.Name = "infyeild"
+infyeild.Parent = hubdrop
+infyeild.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+infyeild.BackgroundTransparency = 0.400
+infyeild.BorderColor3 = Color3.fromRGB(27, 42, 53)
+infyeild.Position = UDim2.new(0, 0, 0.907129347, 0)
+infyeild.Size = UDim2.new(1, 0, 0.152905196, 0)
+infyeild.Font = Enum.Font.SciFi
+infyeild.Text = "Infinite Yeild"
+infyeild.TextColor3 = Color3.fromRGB(255, 255, 255)
+infyeild.TextScaled = true
+infyeild.TextSize = 14.000
+infyeild.TextWrapped = true
+
+UITextSizeConstraint_20.Parent = infyeild
+UITextSizeConstraint_20.MaxTextSize = 49
+
+UITextSizeConstraint_21.Parent = hub
+UITextSizeConstraint_21.MaxTextSize = 34
 
 visuals.Name = "visuals"
 visuals.Parent = dropdown
@@ -527,11 +552,11 @@ esp.TextScaled = true
 esp.TextSize = 14.000
 esp.TextWrapped = true
 
-UITextSizeConstraint_21.Parent = esp
-UITextSizeConstraint_21.MaxTextSize = 45
+UITextSizeConstraint_22.Parent = esp
+UITextSizeConstraint_22.MaxTextSize = 45
 
-UITextSizeConstraint_22.Parent = visuals
-UITextSizeConstraint_22.MaxTextSize = 34
+UITextSizeConstraint_23.Parent = visuals
+UITextSizeConstraint_23.MaxTextSize = 34
 
 settingsbutton.Name = "settingsbutton"
 settingsbutton.Parent = dropdown
@@ -575,11 +600,11 @@ killinertia.TextScaled = true
 killinertia.TextSize = 14.000
 killinertia.TextWrapped = true
 
-UITextSizeConstraint_23.Parent = killinertia
-UITextSizeConstraint_23.MaxTextSize = 32
+UITextSizeConstraint_24.Parent = killinertia
+UITextSizeConstraint_24.MaxTextSize = 32
 
-UITextSizeConstraint_24.Parent = settingsbutton
-UITextSizeConstraint_24.MaxTextSize = 34
+UITextSizeConstraint_25.Parent = settingsbutton
+UITextSizeConstraint_25.MaxTextSize = 34
 
 tabs.Name = "tabs"
 tabs.Parent = InertiaRoblox
@@ -606,8 +631,8 @@ combat.TextScaled = true
 combat.TextSize = 14.000
 combat.TextWrapped = true
 
-UITextSizeConstraint_25.Parent = combat
-UITextSizeConstraint_25.MaxTextSize = 41
+UITextSizeConstraint_26.Parent = combat
+UITextSizeConstraint_26.MaxTextSize = 41
 
 gamehub.Name = "gamehub"
 gamehub.Parent = tabs
@@ -624,8 +649,8 @@ gamehub.TextScaled = true
 gamehub.TextSize = 14.000
 gamehub.TextWrapped = true
 
-UITextSizeConstraint_26.Parent = gamehub
-UITextSizeConstraint_26.MaxTextSize = 41
+UITextSizeConstraint_27.Parent = gamehub
+UITextSizeConstraint_27.MaxTextSize = 41
 
 settings.Name = "settings"
 settings.Parent = tabs
@@ -642,8 +667,8 @@ settings.TextScaled = true
 settings.TextSize = 14.000
 settings.TextWrapped = true
 
-UITextSizeConstraint_27.Parent = settings
-UITextSizeConstraint_27.MaxTextSize = 41
+UITextSizeConstraint_28.Parent = settings
+UITextSizeConstraint_28.MaxTextSize = 41
 
 universal_2.Name = "universal"
 universal_2.Parent = tabs
@@ -660,8 +685,8 @@ universal_2.TextScaled = true
 universal_2.TextSize = 14.000
 universal_2.TextWrapped = true
 
-UITextSizeConstraint_28.Parent = universal_2
-UITextSizeConstraint_28.MaxTextSize = 41
+UITextSizeConstraint_29.Parent = universal_2
+UITextSizeConstraint_29.MaxTextSize = 41
 
 close.Name = "close"
 close.Parent = tabs
@@ -679,8 +704,8 @@ close.TextScaled = true
 close.TextSize = 51.000
 close.TextWrapped = true
 
-UITextSizeConstraint_29.Parent = close
-UITextSizeConstraint_29.MaxTextSize = 51
+UITextSizeConstraint_30.Parent = close
+UITextSizeConstraint_30.MaxTextSize = 51
 
 title.Name = "title"
 title.Parent = tabs
@@ -696,8 +721,8 @@ title.TextScaled = true
 title.TextSize = 14.000
 title.TextWrapped = true
 
-UITextSizeConstraint_30.Parent = title
-UITextSizeConstraint_30.MaxTextSize = 41
+UITextSizeConstraint_31.Parent = title
+UITextSizeConstraint_31.MaxTextSize = 41
 
 logo.Name = "logo"
 logo.Parent = InertiaRoblox
@@ -711,7 +736,7 @@ logo.Image = "http://www.roblox.com/asset/?id=11679407170"
 
 -- Scripts:
 
-local function QDGA_fake_script() -- InertiaRoblox.openandcloseKey 
+local function KIPFMSZ_fake_script() -- InertiaRoblox.openandcloseKey 
 	local script = Instance.new('LocalScript', InertiaRoblox)
 
 	local UIS = game:GetService("UserInputService")
@@ -733,8 +758,8 @@ local function QDGA_fake_script() -- InertiaRoblox.openandcloseKey
 		end
 	end)
 end
-coroutine.wrap(QDGA_fake_script)()
-local function FRXCTLX_fake_script() -- setspeed.LocalScript 
+coroutine.wrap(KIPFMSZ_fake_script)()
+local function GZSCHI_fake_script() -- setspeed.LocalScript 
 	local script = Instance.new('LocalScript', setspeed)
 
 	local wsinput = script.Parent.wsinput
@@ -751,8 +776,8 @@ local function FRXCTLX_fake_script() -- setspeed.LocalScript
 		end
 	end)
 end
-coroutine.wrap(FRXCTLX_fake_script)()
-local function IETS_fake_script() -- setjp.LocalScript 
+coroutine.wrap(GZSCHI_fake_script)()
+local function LQZLD_fake_script() -- setjp.LocalScript 
 	local script = Instance.new('LocalScript', setjp)
 
 	local jpinput = script.Parent.jpinput
@@ -769,8 +794,8 @@ local function IETS_fake_script() -- setjp.LocalScript
 		end
 	end)
 end
-coroutine.wrap(IETS_fake_script)()
-local function OALZG_fake_script() -- resetpower.LocalScript 
+coroutine.wrap(LQZLD_fake_script)()
+local function UJSSWN_fake_script() -- resetpower.LocalScript 
 	local script = Instance.new('LocalScript', resetpower)
 
 	script.Parent.Parent.resetpower.MouseButton1Click:Connect(function()
@@ -778,8 +803,8 @@ local function OALZG_fake_script() -- resetpower.LocalScript
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
 	end)
 end
-coroutine.wrap(OALZG_fake_script)()
-local function BSXUN_fake_script() -- noclip.LocalScript 
+coroutine.wrap(UJSSWN_fake_script)()
+local function EMDI_fake_script() -- noclip.LocalScript 
 	local script = Instance.new('LocalScript', noclip)
 
 	local button = script.Parent.Parent.noclip
@@ -817,8 +842,8 @@ local function BSXUN_fake_script() -- noclip.LocalScript
 		end
 	end)
 end
-coroutine.wrap(BSXUN_fake_script)()
-local function RLHGE_fake_script() -- fly.LocalScript 
+coroutine.wrap(EMDI_fake_script)()
+local function YTLLNFQ_fake_script() -- fly.LocalScript 
 	local script = Instance.new('LocalScript', fly)
 
 	script.Parent.Parent.fly.MouseButton1Click:Connect(function()
@@ -912,8 +937,8 @@ local function RLHGE_fake_script() -- fly.LocalScript
 		end
 	end)
 end
-coroutine.wrap(RLHGE_fake_script)()
-local function QNVGH_fake_script() -- flyTextBox.LocalScript 
+coroutine.wrap(YTLLNFQ_fake_script)()
+local function ULDLY_fake_script() -- flyTextBox.LocalScript 
 	local script = Instance.new('LocalScript', flyTextBox)
 
 	local function focusLost(enterPressed)
@@ -925,8 +950,8 @@ local function QNVGH_fake_script() -- flyTextBox.LocalScript
 	
 	script.Parent.Parent.flyTextBox.FocusLost:Connect(focusLost)
 end
-coroutine.wrap(QNVGH_fake_script)()
-local function FJDVBJ_fake_script() -- clicktp.LocalScript 
+coroutine.wrap(ULDLY_fake_script)()
+local function BIOPHFX_fake_script() -- clicktp.LocalScript 
 	local script = Instance.new('LocalScript', clicktp)
 
 	local UIS = game:GetService("UserInputService")
@@ -957,8 +982,8 @@ local function FJDVBJ_fake_script() -- clicktp.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(FJDVBJ_fake_script)()
-local function RWFUX_fake_script() -- TPTO.LocalScript 
+coroutine.wrap(BIOPHFX_fake_script)()
+local function UALAFQT_fake_script() -- TPTO.LocalScript 
 	local script = Instance.new('LocalScript', TPTO)
 
 	local tpinput = script.Parent.tptoTextBox
@@ -976,8 +1001,8 @@ local function RWFUX_fake_script() -- TPTO.LocalScript
 		end
 	end)
 end
-coroutine.wrap(RWFUX_fake_script)()
-local function UQCBLB_fake_script() -- infjump.LocalScript 
+coroutine.wrap(UALAFQT_fake_script)()
+local function FWPULH_fake_script() -- infjump.LocalScript 
 	local script = Instance.new('LocalScript', infjump)
 
 	local Mouse = game.Players.LocalPlayer:GetMouse()
@@ -992,9 +1017,9 @@ local function UQCBLB_fake_script() -- infjump.LocalScript
 	end)
 	
 	script.Parent.MouseButton1Click:Connect(function()
-		if InfiniteJump == true then
+		if InfiniteJump == false then
 			script.Parent.BackgroundColor3 = Color3.fromRGB(177)
-		elseif InfiniteJump == false then
+		elseif InfiniteJump == true then
 			script.Parent.BackgroundColor3 = Color3.fromRGB(0)
 		end
 	
@@ -1007,8 +1032,8 @@ local function UQCBLB_fake_script() -- infjump.LocalScript
 		end
 	end)
 end
-coroutine.wrap(UQCBLB_fake_script)()
-local function GKVTP_fake_script() -- universal.LocalScript 
+coroutine.wrap(FWPULH_fake_script)()
+local function WIULQ_fake_script() -- universal.LocalScript 
 	local script = Instance.new('LocalScript', universal)
 
 	local button = script.Parent.Parent.universal
@@ -1029,50 +1054,17 @@ local function GKVTP_fake_script() -- universal.LocalScript
 		end
 	end)
 end
-coroutine.wrap(GKVTP_fake_script)()
-local function XXTT_fake_script() -- universal.Dragify 
+coroutine.wrap(WIULQ_fake_script)()
+local function RBMQPI_fake_script() -- universal.drag 
 	local script = Instance.new('LocalScript', universal)
 
-	local UIS = game:GetService("UserInputService")
-	function dragify(Frame)
-	    dragToggle = nil
-	    local dragSpeed = 0
-	    dragInput = nil
-	    dragStart = nil
-	    local dragPos = nil
-	    function updateInput(input)
-	        local Delta = input.Position - dragStart
-	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
-	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
-	    end
-	    Frame.InputBegan:Connect(function(input)
-	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
-	            dragToggle = true
-	            dragStart = input.Position
-	            startPos = Frame.Position
-	            input.Changed:Connect(function()
-	                if input.UserInputState == Enum.UserInputState.End then
-	                    dragToggle = false
-	                end
-	            end)
-	        end
-	    end)
-	    Frame.InputChanged:Connect(function(input)
-	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-	            dragInput = input
-	        end
-	    end)
-	    game:GetService("UserInputService").InputChanged:Connect(function(input)
-	        if input == dragInput and dragToggle then
-	            updateInput(input)
-	        end
-	    end)
-	end
+	local object = script.Parent
 	
-	dragify(script.Parent)
+	object.Active = true
+	object.Draggable = true
 end
-coroutine.wrap(XXTT_fake_script)()
-local function OKYKH_fake_script() -- Speedrunsim.LocalScript 
+coroutine.wrap(RBMQPI_fake_script)()
+local function OIPA_fake_script() -- Speedrunsim.LocalScript 
 	local script = Instance.new('LocalScript', Speedrunsim)
 
 	local button = script.Parent.Parent.Speedrunsim
@@ -1381,8 +1373,8 @@ local function OKYKH_fake_script() -- Speedrunsim.LocalScript
 	
 	end)
 end
-coroutine.wrap(OKYKH_fake_script)()
-local function OYGRKK_fake_script() -- dahoodfaded.LocalScript 
+coroutine.wrap(OIPA_fake_script)()
+local function WCYTS_fake_script() -- dahoodfaded.LocalScript 
 	local script = Instance.new('LocalScript', dahoodfaded)
 
 	local button = script.Parent.Parent.dahoodfaded
@@ -1392,8 +1384,8 @@ local function OYGRKK_fake_script() -- dahoodfaded.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
 	end)
 end
-coroutine.wrap(OYGRKK_fake_script)()
-local function FHYNM_fake_script() -- vghub.LocalScript 
+coroutine.wrap(WCYTS_fake_script)()
+local function FYDWIM_fake_script() -- vghub.LocalScript 
 	local script = Instance.new('LocalScript', vghub)
 
 	local button = script.Parent.Parent.vghub
@@ -1402,8 +1394,8 @@ local function FHYNM_fake_script() -- vghub.LocalScript
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
 	end)
 end
-coroutine.wrap(FHYNM_fake_script)()
-local function UVFSVUK_fake_script() -- raf.LocalScript 
+coroutine.wrap(FYDWIM_fake_script)()
+local function BSQYR_fake_script() -- raf.LocalScript 
 	local script = Instance.new('LocalScript', raf)
 
 	local button = script.Parent.Parent.raf
@@ -1412,8 +1404,8 @@ local function UVFSVUK_fake_script() -- raf.LocalScript
 		loadstring(game:HttpGet('https://pastebin.com/raw/sETwJi3n'))()
 	end)
 end
-coroutine.wrap(UVFSVUK_fake_script)()
-local function FDBL_fake_script() -- owlhub.LocalScript 
+coroutine.wrap(BSQYR_fake_script)()
+local function BUZH_fake_script() -- owlhub.LocalScript 
 	local script = Instance.new('LocalScript', owlhub)
 
 	local button = script.Parent.Parent.owlhub
@@ -1422,8 +1414,8 @@ local function FDBL_fake_script() -- owlhub.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
 	end)
 end
-coroutine.wrap(FDBL_fake_script)()
-local function BGJRRX_fake_script() -- Eclipse.LocalScript 
+coroutine.wrap(BUZH_fake_script)()
+local function VYTXUF_fake_script() -- Eclipse.LocalScript 
 	local script = Instance.new('LocalScript', Eclipse)
 
 	
@@ -1436,8 +1428,18 @@ local function BGJRRX_fake_script() -- Eclipse.LocalScript
 		local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
 	end)
 end
-coroutine.wrap(BGJRRX_fake_script)()
-local function MQKZ_fake_script() -- hub.LocalScript 
+coroutine.wrap(VYTXUF_fake_script)()
+local function GWZHD_fake_script() -- infyeild.LocalScript 
+	local script = Instance.new('LocalScript', infyeild)
+
+	local button = script.Parent.Parent.infyeild
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+end
+coroutine.wrap(GWZHD_fake_script)()
+local function UYAE_fake_script() -- hub.LocalScript 
 	local script = Instance.new('LocalScript', hub)
 
 	local button = script.Parent.Parent.hub
@@ -1458,50 +1460,17 @@ local function MQKZ_fake_script() -- hub.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MQKZ_fake_script)()
-local function PRCZ_fake_script() -- hub.Dragify 
+coroutine.wrap(UYAE_fake_script)()
+local function PMGR_fake_script() -- hub.drag 
 	local script = Instance.new('LocalScript', hub)
 
-	local UIS = game:GetService("UserInputService")
-	function dragify(Frame)
-	    dragToggle = nil
-	    local dragSpeed = 0
-	    dragInput = nil
-	    dragStart = nil
-	    local dragPos = nil
-	    function updateInput(input)
-	        local Delta = input.Position - dragStart
-	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
-	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
-	    end
-	    Frame.InputBegan:Connect(function(input)
-	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
-	            dragToggle = true
-	            dragStart = input.Position
-	            startPos = Frame.Position
-	            input.Changed:Connect(function()
-	                if input.UserInputState == Enum.UserInputState.End then
-	                    dragToggle = false
-	                end
-	            end)
-	        end
-	    end)
-	    Frame.InputChanged:Connect(function(input)
-	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-	            dragInput = input
-	        end
-	    end)
-	    game:GetService("UserInputService").InputChanged:Connect(function(input)
-	        if input == dragInput and dragToggle then
-	            updateInput(input)
-	        end
-	    end)
-	end
+	local object = script.Parent
 	
-	dragify(script.Parent)
+	object.Active = true
+	object.Draggable = true
 end
-coroutine.wrap(PRCZ_fake_script)()
-local function CJITOHE_fake_script() -- esp.LocalScript 
+coroutine.wrap(PMGR_fake_script)()
+local function AYIRRB_fake_script() -- esp.LocalScript 
 	local script = Instance.new('LocalScript', esp)
 
 	local Players = game:GetService("Players")
@@ -1590,8 +1559,8 @@ local function CJITOHE_fake_script() -- esp.LocalScript
 	end)
 	
 end
-coroutine.wrap(CJITOHE_fake_script)()
-local function CHDGQB_fake_script() -- visuals.LocalScript 
+coroutine.wrap(AYIRRB_fake_script)()
+local function KJRZXJD_fake_script() -- visuals.LocalScript 
 	local script = Instance.new('LocalScript', visuals)
 
 	local button = script.Parent.Parent.visuals
@@ -1612,50 +1581,17 @@ local function CHDGQB_fake_script() -- visuals.LocalScript
 		end
 	end)
 end
-coroutine.wrap(CHDGQB_fake_script)()
-local function NDBOI_fake_script() -- visuals.Dragify 
+coroutine.wrap(KJRZXJD_fake_script)()
+local function WRRH_fake_script() -- visuals.drag 
 	local script = Instance.new('LocalScript', visuals)
 
-	local UIS = game:GetService("UserInputService")
-	function dragify(Frame)
-	    dragToggle = nil
-	    local dragSpeed = 0
-	    dragInput = nil
-	    dragStart = nil
-	    local dragPos = nil
-	    function updateInput(input)
-	        local Delta = input.Position - dragStart
-	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
-	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
-	    end
-	    Frame.InputBegan:Connect(function(input)
-	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
-	            dragToggle = true
-	            dragStart = input.Position
-	            startPos = Frame.Position
-	            input.Changed:Connect(function()
-	                if input.UserInputState == Enum.UserInputState.End then
-	                    dragToggle = false
-	                end
-	            end)
-	        end
-	    end)
-	    Frame.InputChanged:Connect(function(input)
-	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-	            dragInput = input
-	        end
-	    end)
-	    game:GetService("UserInputService").InputChanged:Connect(function(input)
-	        if input == dragInput and dragToggle then
-	            updateInput(input)
-	        end
-	    end)
-	end
+	local object = script.Parent
 	
-	dragify(script.Parent)
+	object.Active = true
+	object.Draggable = true
 end
-coroutine.wrap(NDBOI_fake_script)()
-local function AVVR_fake_script() -- killinertia.LocalScript 
+coroutine.wrap(WRRH_fake_script)()
+local function UJIET_fake_script() -- killinertia.LocalScript 
 	local script = Instance.new('LocalScript', killinertia)
 
 	local inertia = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.InertiaRoblox
@@ -1664,8 +1600,8 @@ local function AVVR_fake_script() -- killinertia.LocalScript
 		inertia:Destroy()
 	end)
 end
-coroutine.wrap(AVVR_fake_script)()
-local function PSRJO_fake_script() -- settingsbutton.LocalScript 
+coroutine.wrap(UJIET_fake_script)()
+local function DOSTOZJ_fake_script() -- settingsbutton.LocalScript 
 	local script = Instance.new('LocalScript', settingsbutton)
 
 	local button = script.Parent.Parent.settingsbutton
@@ -1686,92 +1622,17 @@ local function PSRJO_fake_script() -- settingsbutton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(PSRJO_fake_script)()
-local function JPAVTV_fake_script() -- settingsbutton.Dragify 
+coroutine.wrap(DOSTOZJ_fake_script)()
+local function RUMHZ_fake_script() -- settingsbutton.drag 
 	local script = Instance.new('LocalScript', settingsbutton)
 
-	local UIS = game:GetService("UserInputService")
-	function dragify(Frame)
-	    dragToggle = nil
-	    local dragSpeed = 0
-	    dragInput = nil
-	    dragStart = nil
-	    local dragPos = nil
-	    function updateInput(input)
-	        local Delta = input.Position - dragStart
-	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
-	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
-	    end
-	    Frame.InputBegan:Connect(function(input)
-	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
-	            dragToggle = true
-	            dragStart = input.Position
-	            startPos = Frame.Position
-	            input.Changed:Connect(function()
-	                if input.UserInputState == Enum.UserInputState.End then
-	                    dragToggle = false
-	                end
-	            end)
-	        end
-	    end)
-	    Frame.InputChanged:Connect(function(input)
-	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-	            dragInput = input
-	        end
-	    end)
-	    game:GetService("UserInputService").InputChanged:Connect(function(input)
-	        if input == dragInput and dragToggle then
-	            updateInput(input)
-	        end
-	    end)
-	end
+	local object = script.Parent
 	
-	dragify(script.Parent)
+	object.Active = true
+	object.Draggable = true
 end
-coroutine.wrap(JPAVTV_fake_script)()
-local function OJOKZMZ_fake_script() -- tabs.Dragify 
-	local script = Instance.new('LocalScript', tabs)
-
-	local UIS = game:GetService("UserInputService")
-	function dragify(Frame)
-	    dragToggle = nil
-	    local dragSpeed = 0
-	    dragInput = nil
-	    dragStart = nil
-	    local dragPos = nil
-	    function updateInput(input)
-	        local Delta = input.Position - dragStart
-	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
-	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
-	    end
-	    Frame.InputBegan:Connect(function(input)
-	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
-	            dragToggle = true
-	            dragStart = input.Position
-	            startPos = Frame.Position
-	            input.Changed:Connect(function()
-	                if input.UserInputState == Enum.UserInputState.End then
-	                    dragToggle = false
-	                end
-	            end)
-	        end
-	    end)
-	    Frame.InputChanged:Connect(function(input)
-	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-	            dragInput = input
-	        end
-	    end)
-	    game:GetService("UserInputService").InputChanged:Connect(function(input)
-	        if input == dragInput and dragToggle then
-	            updateInput(input)
-	        end
-	    end)
-	end
-	
-	dragify(script.Parent)
-end
-coroutine.wrap(OJOKZMZ_fake_script)()
-local function UNOK_fake_script() -- combat.LocalScript 
+coroutine.wrap(RUMHZ_fake_script)()
+local function BMDWEP_fake_script() -- combat.LocalScript 
 	local script = Instance.new('LocalScript', combat)
 
 	local visuals = script.Parent.Parent.Parent.main.dropdown.visuals
@@ -1789,8 +1650,8 @@ local function UNOK_fake_script() -- combat.LocalScript
 		end
 	end)
 end
-coroutine.wrap(UNOK_fake_script)()
-local function QWKJBRL_fake_script() -- gamehub.LocalScript 
+coroutine.wrap(BMDWEP_fake_script)()
+local function XOQOM_fake_script() -- gamehub.LocalScript 
 	local script = Instance.new('LocalScript', gamehub)
 
 	local hub = script.Parent.Parent.Parent.main.dropdown.hub
@@ -1808,8 +1669,8 @@ local function QWKJBRL_fake_script() -- gamehub.LocalScript
 		end
 	end)
 end
-coroutine.wrap(QWKJBRL_fake_script)()
-local function WRGOFKI_fake_script() -- settings.LocalScript 
+coroutine.wrap(XOQOM_fake_script)()
+local function QWDMA_fake_script() -- settings.LocalScript 
 	local script = Instance.new('LocalScript', settings)
 
 	local settingsbutton = script.Parent.Parent.Parent.main.dropdown.settingsbutton
@@ -1827,8 +1688,8 @@ local function WRGOFKI_fake_script() -- settings.LocalScript
 		end
 	end)
 end
-coroutine.wrap(WRGOFKI_fake_script)()
-local function RLAG_fake_script() -- universal_2.LocalScript 
+coroutine.wrap(QWDMA_fake_script)()
+local function IHUL_fake_script() -- universal_2.LocalScript 
 	local script = Instance.new('LocalScript', universal_2)
 
 	local universal = script.Parent.Parent.Parent.main.dropdown.universal
@@ -1846,8 +1707,8 @@ local function RLAG_fake_script() -- universal_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(RLAG_fake_script)()
-local function ERXCL_fake_script() -- close.LocalScript 
+coroutine.wrap(IHUL_fake_script)()
+local function VPEV_fake_script() -- close.LocalScript 
 	local script = Instance.new('LocalScript', close)
 
 	local button = script.Parent
@@ -1878,4 +1739,13 @@ local function ERXCL_fake_script() -- close.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ERXCL_fake_script)()
+coroutine.wrap(VPEV_fake_script)()
+local function TMULAOM_fake_script() -- tabs.drag 
+	local script = Instance.new('LocalScript', tabs)
+
+	local object = script.Parent
+	
+	object.Active = true
+	object.Draggable = true
+end
+coroutine.wrap(TMULAOM_fake_script)()
