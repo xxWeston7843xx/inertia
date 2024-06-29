@@ -86,7 +86,7 @@ local logo = Instance.new("ImageLabel")
 --Properties:
 
 InertiaRoblox.Name = "InertiaRoblox"
-InertiaRoblox.Parent = game.Workspace
+InertiaRoblox.Parent = game.CoreGui
 InertiaRoblox.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 UIAspectRatioConstraint.Parent = InertiaRoblox
