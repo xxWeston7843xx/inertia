@@ -1,9 +1,3 @@
-game:GetService("StarterGui"):SetCore("SendNotification", {
-	Title = "Inertia Loaded.",
-	Text = "Press Right Shift To Open Interface.",
-	Duration = 5
-}
-
 -- Instances:
 
 local InertiaRoblox = Instance.new("ScreenGui")
