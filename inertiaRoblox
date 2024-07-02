@@ -1,10 +1,9 @@
+-- Instances:
 game:GetService("StarterGui"):SetCore("SendNotification", {
-	Title = "Inertia Has Been Loaded.",
+	Title = "Inertia Loaded.",
 	Text = "Press Right Shift To Open Interface.",
 	Duration = 5
 })
-
--- Instances:
 
 local InertiaRoblox = Instance.new("ScreenGui")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
@@ -55,32 +54,34 @@ local Eclipse = Instance.new("TextButton")
 local UITextSizeConstraint_19 = Instance.new("UITextSizeConstraint")
 local infyeild = Instance.new("TextButton")
 local UITextSizeConstraint_20 = Instance.new("UITextSizeConstraint")
+local prizzlife = Instance.new("TextButton")
 local UITextSizeConstraint_21 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_22 = Instance.new("UITextSizeConstraint")
 local visuals = Instance.new("TextButton")
 local combatdrop = Instance.new("Frame")
 local UICorner_3 = Instance.new("UICorner")
 local esp = Instance.new("TextButton")
-local UITextSizeConstraint_22 = Instance.new("UITextSizeConstraint")
 local UITextSizeConstraint_23 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_24 = Instance.new("UITextSizeConstraint")
 local settingsbutton = Instance.new("TextButton")
 local settingsdrop = Instance.new("Frame")
 local UICorner_4 = Instance.new("UICorner")
 local killinertia = Instance.new("TextButton")
-local UITextSizeConstraint_24 = Instance.new("UITextSizeConstraint")
 local UITextSizeConstraint_25 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_26 = Instance.new("UITextSizeConstraint")
 local tabs = Instance.new("Frame")
 local combat = Instance.new("TextButton")
-local UITextSizeConstraint_26 = Instance.new("UITextSizeConstraint")
-local gamehub = Instance.new("TextButton")
 local UITextSizeConstraint_27 = Instance.new("UITextSizeConstraint")
-local settings = Instance.new("TextButton")
+local gamehub = Instance.new("TextButton")
 local UITextSizeConstraint_28 = Instance.new("UITextSizeConstraint")
-local universal_2 = Instance.new("TextButton")
+local settings = Instance.new("TextButton")
 local UITextSizeConstraint_29 = Instance.new("UITextSizeConstraint")
-local close = Instance.new("TextButton")
+local universal_2 = Instance.new("TextButton")
 local UITextSizeConstraint_30 = Instance.new("UITextSizeConstraint")
-local title = Instance.new("TextLabel")
+local close = Instance.new("TextButton")
 local UITextSizeConstraint_31 = Instance.new("UITextSizeConstraint")
+local title = Instance.new("TextLabel")
+local UITextSizeConstraint_32 = Instance.new("UITextSizeConstraint")
 local logo = Instance.new("ImageLabel")
 
 --Properties:
@@ -507,8 +508,25 @@ infyeild.TextWrapped = true
 UITextSizeConstraint_20.Parent = infyeild
 UITextSizeConstraint_20.MaxTextSize = 49
 
-UITextSizeConstraint_21.Parent = hub
-UITextSizeConstraint_21.MaxTextSize = 34
+prizzlife.Name = "prizzlife"
+prizzlife.Parent = hubdrop
+prizzlife.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+prizzlife.BackgroundTransparency = 0.400
+prizzlife.BorderColor3 = Color3.fromRGB(27, 42, 53)
+prizzlife.Position = UDim2.new(0, 0, 1.05869603, 0)
+prizzlife.Size = UDim2.new(1, 0, 0.152905196, 0)
+prizzlife.Font = Enum.Font.SciFi
+prizzlife.Text = "PrizzLife Admin (Prison Life)"
+prizzlife.TextColor3 = Color3.fromRGB(255, 255, 255)
+prizzlife.TextScaled = true
+prizzlife.TextSize = 14.000
+prizzlife.TextWrapped = true
+
+UITextSizeConstraint_21.Parent = prizzlife
+UITextSizeConstraint_21.MaxTextSize = 49
+
+UITextSizeConstraint_22.Parent = hub
+UITextSizeConstraint_22.MaxTextSize = 34
 
 visuals.Name = "visuals"
 visuals.Parent = dropdown
@@ -552,11 +570,11 @@ esp.TextScaled = true
 esp.TextSize = 14.000
 esp.TextWrapped = true
 
-UITextSizeConstraint_22.Parent = esp
-UITextSizeConstraint_22.MaxTextSize = 45
+UITextSizeConstraint_23.Parent = esp
+UITextSizeConstraint_23.MaxTextSize = 45
 
-UITextSizeConstraint_23.Parent = visuals
-UITextSizeConstraint_23.MaxTextSize = 34
+UITextSizeConstraint_24.Parent = visuals
+UITextSizeConstraint_24.MaxTextSize = 34
 
 settingsbutton.Name = "settingsbutton"
 settingsbutton.Parent = dropdown
@@ -600,11 +618,11 @@ killinertia.TextScaled = true
 killinertia.TextSize = 14.000
 killinertia.TextWrapped = true
 
-UITextSizeConstraint_24.Parent = killinertia
-UITextSizeConstraint_24.MaxTextSize = 32
+UITextSizeConstraint_25.Parent = killinertia
+UITextSizeConstraint_25.MaxTextSize = 32
 
-UITextSizeConstraint_25.Parent = settingsbutton
-UITextSizeConstraint_25.MaxTextSize = 34
+UITextSizeConstraint_26.Parent = settingsbutton
+UITextSizeConstraint_26.MaxTextSize = 34
 
 tabs.Name = "tabs"
 tabs.Parent = InertiaRoblox
@@ -631,8 +649,8 @@ combat.TextScaled = true
 combat.TextSize = 14.000
 combat.TextWrapped = true
 
-UITextSizeConstraint_26.Parent = combat
-UITextSizeConstraint_26.MaxTextSize = 41
+UITextSizeConstraint_27.Parent = combat
+UITextSizeConstraint_27.MaxTextSize = 41
 
 gamehub.Name = "gamehub"
 gamehub.Parent = tabs
@@ -649,8 +667,8 @@ gamehub.TextScaled = true
 gamehub.TextSize = 14.000
 gamehub.TextWrapped = true
 
-UITextSizeConstraint_27.Parent = gamehub
-UITextSizeConstraint_27.MaxTextSize = 41
+UITextSizeConstraint_28.Parent = gamehub
+UITextSizeConstraint_28.MaxTextSize = 41
 
 settings.Name = "settings"
 settings.Parent = tabs
@@ -667,8 +685,8 @@ settings.TextScaled = true
 settings.TextSize = 14.000
 settings.TextWrapped = true
 
-UITextSizeConstraint_28.Parent = settings
-UITextSizeConstraint_28.MaxTextSize = 41
+UITextSizeConstraint_29.Parent = settings
+UITextSizeConstraint_29.MaxTextSize = 41
 
 universal_2.Name = "universal"
 universal_2.Parent = tabs
@@ -685,8 +703,8 @@ universal_2.TextScaled = true
 universal_2.TextSize = 14.000
 universal_2.TextWrapped = true
 
-UITextSizeConstraint_29.Parent = universal_2
-UITextSizeConstraint_29.MaxTextSize = 41
+UITextSizeConstraint_30.Parent = universal_2
+UITextSizeConstraint_30.MaxTextSize = 41
 
 close.Name = "close"
 close.Parent = tabs
@@ -704,8 +722,8 @@ close.TextScaled = true
 close.TextSize = 51.000
 close.TextWrapped = true
 
-UITextSizeConstraint_30.Parent = close
-UITextSizeConstraint_30.MaxTextSize = 51
+UITextSizeConstraint_31.Parent = close
+UITextSizeConstraint_31.MaxTextSize = 51
 
 title.Name = "title"
 title.Parent = tabs
@@ -721,8 +739,8 @@ title.TextScaled = true
 title.TextSize = 14.000
 title.TextWrapped = true
 
-UITextSizeConstraint_31.Parent = title
-UITextSizeConstraint_31.MaxTextSize = 41
+UITextSizeConstraint_32.Parent = title
+UITextSizeConstraint_32.MaxTextSize = 41
 
 logo.Name = "logo"
 logo.Parent = InertiaRoblox
@@ -736,7 +754,7 @@ logo.Image = "http://www.roblox.com/asset/?id=11679407170"
 
 -- Scripts:
 
-local function KIPFMSZ_fake_script() -- InertiaRoblox.openandcloseKey 
+local function ACRZX_fake_script() -- InertiaRoblox.openandcloseKey 
 	local script = Instance.new('LocalScript', InertiaRoblox)
 
 	local UIS = game:GetService("UserInputService")
@@ -758,8 +776,8 @@ local function KIPFMSZ_fake_script() -- InertiaRoblox.openandcloseKey
 		end
 	end)
 end
-coroutine.wrap(KIPFMSZ_fake_script)()
-local function GZSCHI_fake_script() -- setspeed.LocalScript 
+coroutine.wrap(ACRZX_fake_script)()
+local function BBQTJD_fake_script() -- setspeed.LocalScript 
 	local script = Instance.new('LocalScript', setspeed)
 
 	local wsinput = script.Parent.wsinput
@@ -776,8 +794,8 @@ local function GZSCHI_fake_script() -- setspeed.LocalScript
 		end
 	end)
 end
-coroutine.wrap(GZSCHI_fake_script)()
-local function LQZLD_fake_script() -- setjp.LocalScript 
+coroutine.wrap(BBQTJD_fake_script)()
+local function PXKAQ_fake_script() -- setjp.LocalScript 
 	local script = Instance.new('LocalScript', setjp)
 
 	local jpinput = script.Parent.jpinput
@@ -794,8 +812,8 @@ local function LQZLD_fake_script() -- setjp.LocalScript
 		end
 	end)
 end
-coroutine.wrap(LQZLD_fake_script)()
-local function UJSSWN_fake_script() -- resetpower.LocalScript 
+coroutine.wrap(PXKAQ_fake_script)()
+local function UJZHD_fake_script() -- resetpower.LocalScript 
 	local script = Instance.new('LocalScript', resetpower)
 
 	script.Parent.Parent.resetpower.MouseButton1Click:Connect(function()
@@ -803,8 +821,8 @@ local function UJSSWN_fake_script() -- resetpower.LocalScript
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
 	end)
 end
-coroutine.wrap(UJSSWN_fake_script)()
-local function EMDI_fake_script() -- noclip.LocalScript 
+coroutine.wrap(UJZHD_fake_script)()
+local function UFSIRD_fake_script() -- noclip.LocalScript 
 	local script = Instance.new('LocalScript', noclip)
 
 	local button = script.Parent.Parent.noclip
@@ -842,8 +860,8 @@ local function EMDI_fake_script() -- noclip.LocalScript
 		end
 	end)
 end
-coroutine.wrap(EMDI_fake_script)()
-local function YTLLNFQ_fake_script() -- fly.LocalScript 
+coroutine.wrap(UFSIRD_fake_script)()
+local function CZIG_fake_script() -- fly.LocalScript 
 	local script = Instance.new('LocalScript', fly)
 
 	script.Parent.Parent.fly.MouseButton1Click:Connect(function()
@@ -937,8 +955,8 @@ local function YTLLNFQ_fake_script() -- fly.LocalScript
 		end
 	end)
 end
-coroutine.wrap(YTLLNFQ_fake_script)()
-local function ULDLY_fake_script() -- flyTextBox.LocalScript 
+coroutine.wrap(CZIG_fake_script)()
+local function AKGN_fake_script() -- flyTextBox.LocalScript 
 	local script = Instance.new('LocalScript', flyTextBox)
 
 	local function focusLost(enterPressed)
@@ -950,8 +968,8 @@ local function ULDLY_fake_script() -- flyTextBox.LocalScript
 	
 	script.Parent.Parent.flyTextBox.FocusLost:Connect(focusLost)
 end
-coroutine.wrap(ULDLY_fake_script)()
-local function BIOPHFX_fake_script() -- clicktp.LocalScript 
+coroutine.wrap(AKGN_fake_script)()
+local function QFNS_fake_script() -- clicktp.LocalScript 
 	local script = Instance.new('LocalScript', clicktp)
 
 	local UIS = game:GetService("UserInputService")
@@ -982,8 +1000,8 @@ local function BIOPHFX_fake_script() -- clicktp.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(BIOPHFX_fake_script)()
-local function UALAFQT_fake_script() -- TPTO.LocalScript 
+coroutine.wrap(QFNS_fake_script)()
+local function KTUD_fake_script() -- TPTO.LocalScript 
 	local script = Instance.new('LocalScript', TPTO)
 
 	local tpinput = script.Parent.tptoTextBox
@@ -1001,8 +1019,8 @@ local function UALAFQT_fake_script() -- TPTO.LocalScript
 		end
 	end)
 end
-coroutine.wrap(UALAFQT_fake_script)()
-local function FWPULH_fake_script() -- infjump.LocalScript 
+coroutine.wrap(KTUD_fake_script)()
+local function CRWP_fake_script() -- infjump.LocalScript 
 	local script = Instance.new('LocalScript', infjump)
 
 	local Mouse = game.Players.LocalPlayer:GetMouse()
@@ -1032,19 +1050,11 @@ local function FWPULH_fake_script() -- infjump.LocalScript
 		end
 	end)
 end
-coroutine.wrap(FWPULH_fake_script)()
-local function WIULQ_fake_script() -- universal.LocalScript 
+coroutine.wrap(CRWP_fake_script)()
+local function ILIOGH_fake_script() -- universal.LocalScript 
 	local script = Instance.new('LocalScript', universal)
 
 	local button = script.Parent.Parent.universal
-	
-	button.MouseButton1Click:Connect(function()
-		if button.universaldrop.Visible == false then
-			button.universaldrop.Visible = true
-		elseif button.universaldrop.Visible == true then
-			button.universaldrop.Visible = false
-		end
-	end)
 	
 	button.MouseButton2Click:Connect(function()
 		if button.universaldrop.Visible == false then
@@ -1054,8 +1064,8 @@ local function WIULQ_fake_script() -- universal.LocalScript
 		end
 	end)
 end
-coroutine.wrap(WIULQ_fake_script)()
-local function RBMQPI_fake_script() -- universal.drag 
+coroutine.wrap(ILIOGH_fake_script)()
+local function BXSJX_fake_script() -- universal.drag 
 	local script = Instance.new('LocalScript', universal)
 
 	local object = script.Parent
@@ -1063,8 +1073,8 @@ local function RBMQPI_fake_script() -- universal.drag
 	object.Active = true
 	object.Draggable = true
 end
-coroutine.wrap(RBMQPI_fake_script)()
-local function OIPA_fake_script() -- Speedrunsim.LocalScript 
+coroutine.wrap(BXSJX_fake_script)()
+local function OASY_fake_script() -- Speedrunsim.LocalScript 
 	local script = Instance.new('LocalScript', Speedrunsim)
 
 	local button = script.Parent.Parent.Speedrunsim
@@ -1373,8 +1383,8 @@ local function OIPA_fake_script() -- Speedrunsim.LocalScript
 	
 	end)
 end
-coroutine.wrap(OIPA_fake_script)()
-local function WCYTS_fake_script() -- dahoodfaded.LocalScript 
+coroutine.wrap(OASY_fake_script)()
+local function MBLNG_fake_script() -- dahoodfaded.LocalScript 
 	local script = Instance.new('LocalScript', dahoodfaded)
 
 	local button = script.Parent.Parent.dahoodfaded
@@ -1384,8 +1394,8 @@ local function WCYTS_fake_script() -- dahoodfaded.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
 	end)
 end
-coroutine.wrap(WCYTS_fake_script)()
-local function FYDWIM_fake_script() -- vghub.LocalScript 
+coroutine.wrap(MBLNG_fake_script)()
+local function BLPYKK_fake_script() -- vghub.LocalScript 
 	local script = Instance.new('LocalScript', vghub)
 
 	local button = script.Parent.Parent.vghub
@@ -1394,8 +1404,8 @@ local function FYDWIM_fake_script() -- vghub.LocalScript
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
 	end)
 end
-coroutine.wrap(FYDWIM_fake_script)()
-local function BSQYR_fake_script() -- raf.LocalScript 
+coroutine.wrap(BLPYKK_fake_script)()
+local function TXWQ_fake_script() -- raf.LocalScript 
 	local script = Instance.new('LocalScript', raf)
 
 	local button = script.Parent.Parent.raf
@@ -1404,8 +1414,8 @@ local function BSQYR_fake_script() -- raf.LocalScript
 		loadstring(game:HttpGet('https://pastebin.com/raw/sETwJi3n'))()
 	end)
 end
-coroutine.wrap(BSQYR_fake_script)()
-local function BUZH_fake_script() -- owlhub.LocalScript 
+coroutine.wrap(TXWQ_fake_script)()
+local function DZEYPZM_fake_script() -- owlhub.LocalScript 
 	local script = Instance.new('LocalScript', owlhub)
 
 	local button = script.Parent.Parent.owlhub
@@ -1414,8 +1424,8 @@ local function BUZH_fake_script() -- owlhub.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
 	end)
 end
-coroutine.wrap(BUZH_fake_script)()
-local function VYTXUF_fake_script() -- Eclipse.LocalScript 
+coroutine.wrap(DZEYPZM_fake_script)()
+local function VVTD_fake_script() -- Eclipse.LocalScript 
 	local script = Instance.new('LocalScript', Eclipse)
 
 	
@@ -1428,8 +1438,8 @@ local function VYTXUF_fake_script() -- Eclipse.LocalScript
 		local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
 	end)
 end
-coroutine.wrap(VYTXUF_fake_script)()
-local function GWZHD_fake_script() -- infyeild.LocalScript 
+coroutine.wrap(VVTD_fake_script)()
+local function RGLT_fake_script() -- infyeild.LocalScript 
 	local script = Instance.new('LocalScript', infyeild)
 
 	local button = script.Parent.Parent.infyeild
@@ -1438,19 +1448,46 @@ local function GWZHD_fake_script() -- infyeild.LocalScript
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(GWZHD_fake_script)()
-local function UYAE_fake_script() -- hub.LocalScript 
+coroutine.wrap(RGLT_fake_script)()
+local function IBSEBUJ_fake_script() -- prizzlife.LocalScript 
+	local script = Instance.new('LocalScript', prizzlife)
+
+	local button = script.Parent.Parent.infyeild
+	
+	button.MouseButton1Click:Connect(function()
+		Execution_Runtime = tick()
+		PLadmin_Settings = {
+			DefaultPrefix = "?"; --The default prefix for pladmin
+			JoinNotify = false; --Notify when a player joins
+			AutoRespawn = true; --Automatically loadcharacter when dying
+			AntiVoid = true; --Automatically teleport up when falling into void
+			AntiTase = true; --Prevents you from being tased (100% no getconnections used because its absolute garbage)
+			AntiArrest = true; --Prevents you from being arrested (100% no getconnections used because its absolute garbage)
+			AntiShoot = true; --Kills player who tries to shoot you (Will be delayed if you have shitty ping, *COUGH* PLDT Users)
+			AntiPunch = true; --Instantly kill players who try to punch you
+			AntiFling = true; --Prevent exploiters from flinging you
+			AntiShield = true; --stop pay2win people and bypass their shields
+			AntiBring = true; --Prevent other exploiter(s) from bringing you
+			SilentAim = false; --Makes you shoot without missing a target
+			AutoGuns = false; --Automatically get all guns
+			OldItemMethod = false; --Use teleport for getting items (USE THIS IF PRISON LIFE PATCHES THE TABLE METHOD)
+			Fullbright = false; --Enable fullbrightness
+			WhitelistRanked = false; --Automatically whitelist ranked players (DO NOT USE WHEN RANKING ALL PLAYERS)
+			RankedNukeCmds = false; --Allow ranked players to use nuke commands (Very annoying)
+			RankedMultiCmd = true; --Allow ranked players to use the arguments: "all, and team", EX: ?kill all
+			RankedOutput = false; --Chat the output commands of ranked players
+			WhisperToRanked = true; --Use whisper for outputing commands for ranked players
+			Force_isMobile = false; --Force mobile action gui (Punch and crawl buttons) if executor is too shitty and detected as "emulator"
+		};wait()
+		
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/elliexmln/PrizzLife/main/pladmin.lua'))()
+	end)
+end
+coroutine.wrap(IBSEBUJ_fake_script)()
+local function SFOHSM_fake_script() -- hub.LocalScript 
 	local script = Instance.new('LocalScript', hub)
 
 	local button = script.Parent.Parent.hub
-	
-	button.MouseButton1Click:Connect(function()
-		if button.hubdrop.Visible == false then
-			button.hubdrop.Visible = true
-		elseif button.hubdrop.Visible == true then
-			button.hubdrop.Visible = false
-		end
-	end)
 	
 	button.MouseButton2Click:Connect(function()
 		if button.hubdrop.Visible == false then
@@ -1460,8 +1497,8 @@ local function UYAE_fake_script() -- hub.LocalScript
 		end
 	end)
 end
-coroutine.wrap(UYAE_fake_script)()
-local function PMGR_fake_script() -- hub.drag 
+coroutine.wrap(SFOHSM_fake_script)()
+local function BNJL_fake_script() -- hub.drag 
 	local script = Instance.new('LocalScript', hub)
 
 	local object = script.Parent
@@ -1469,8 +1506,8 @@ local function PMGR_fake_script() -- hub.drag
 	object.Active = true
 	object.Draggable = true
 end
-coroutine.wrap(PMGR_fake_script)()
-local function AYIRRB_fake_script() -- esp.LocalScript 
+coroutine.wrap(BNJL_fake_script)()
+local function MXPEYKI_fake_script() -- esp.LocalScript 
 	local script = Instance.new('LocalScript', esp)
 
 	local Players = game:GetService("Players")
@@ -1559,19 +1596,11 @@ local function AYIRRB_fake_script() -- esp.LocalScript
 	end)
 	
 end
-coroutine.wrap(AYIRRB_fake_script)()
-local function KJRZXJD_fake_script() -- visuals.LocalScript 
+coroutine.wrap(MXPEYKI_fake_script)()
+local function LRQFS_fake_script() -- visuals.LocalScript 
 	local script = Instance.new('LocalScript', visuals)
 
 	local button = script.Parent.Parent.visuals
-	
-	button.MouseButton1Click:Connect(function()
-		if button.combatdrop.Visible == false then
-			button.combatdrop.Visible = true
-		elseif button.combatdrop.Visible == true then
-			button.combatdrop.Visible = false
-		end
-	end)
 	
 	button.MouseButton2Click:Connect(function()
 		if button.combatdrop.Visible == false then
@@ -1581,8 +1610,8 @@ local function KJRZXJD_fake_script() -- visuals.LocalScript
 		end
 	end)
 end
-coroutine.wrap(KJRZXJD_fake_script)()
-local function WRRH_fake_script() -- visuals.drag 
+coroutine.wrap(LRQFS_fake_script)()
+local function CUQHW_fake_script() -- visuals.drag 
 	local script = Instance.new('LocalScript', visuals)
 
 	local object = script.Parent
@@ -1590,8 +1619,8 @@ local function WRRH_fake_script() -- visuals.drag
 	object.Active = true
 	object.Draggable = true
 end
-coroutine.wrap(WRRH_fake_script)()
-local function UJIET_fake_script() -- killinertia.LocalScript 
+coroutine.wrap(CUQHW_fake_script)()
+local function SACN_fake_script() -- killinertia.LocalScript 
 	local script = Instance.new('LocalScript', killinertia)
 
 	local inertia = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.InertiaRoblox
@@ -1600,19 +1629,11 @@ local function UJIET_fake_script() -- killinertia.LocalScript
 		inertia:Destroy()
 	end)
 end
-coroutine.wrap(UJIET_fake_script)()
-local function DOSTOZJ_fake_script() -- settingsbutton.LocalScript 
+coroutine.wrap(SACN_fake_script)()
+local function IKQXYP_fake_script() -- settingsbutton.LocalScript 
 	local script = Instance.new('LocalScript', settingsbutton)
 
 	local button = script.Parent.Parent.settingsbutton
-	
-	button.MouseButton1Click:Connect(function()
-		if button.settingsdrop.Visible == false then
-			button.settingsdrop.Visible = true
-		elseif button.settingsdrop.Visible == true then
-			button.settingsdrop.Visible = false
-		end
-	end)
 	
 	button.MouseButton2Click:Connect(function()
 		if button.settingsdrop.Visible == false then
@@ -1622,8 +1643,8 @@ local function DOSTOZJ_fake_script() -- settingsbutton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(DOSTOZJ_fake_script)()
-local function RUMHZ_fake_script() -- settingsbutton.drag 
+coroutine.wrap(IKQXYP_fake_script)()
+local function XBKBN_fake_script() -- settingsbutton.drag 
 	local script = Instance.new('LocalScript', settingsbutton)
 
 	local object = script.Parent
@@ -1631,8 +1652,8 @@ local function RUMHZ_fake_script() -- settingsbutton.drag
 	object.Active = true
 	object.Draggable = true
 end
-coroutine.wrap(RUMHZ_fake_script)()
-local function BMDWEP_fake_script() -- combat.LocalScript 
+coroutine.wrap(XBKBN_fake_script)()
+local function VJUKIU_fake_script() -- combat.LocalScript 
 	local script = Instance.new('LocalScript', combat)
 
 	local visuals = script.Parent.Parent.Parent.main.dropdown.visuals
@@ -1650,8 +1671,8 @@ local function BMDWEP_fake_script() -- combat.LocalScript
 		end
 	end)
 end
-coroutine.wrap(BMDWEP_fake_script)()
-local function XOQOM_fake_script() -- gamehub.LocalScript 
+coroutine.wrap(VJUKIU_fake_script)()
+local function ZZBJYXG_fake_script() -- gamehub.LocalScript 
 	local script = Instance.new('LocalScript', gamehub)
 
 	local hub = script.Parent.Parent.Parent.main.dropdown.hub
@@ -1669,8 +1690,8 @@ local function XOQOM_fake_script() -- gamehub.LocalScript
 		end
 	end)
 end
-coroutine.wrap(XOQOM_fake_script)()
-local function QWDMA_fake_script() -- settings.LocalScript 
+coroutine.wrap(ZZBJYXG_fake_script)()
+local function HSHCP_fake_script() -- settings.LocalScript 
 	local script = Instance.new('LocalScript', settings)
 
 	local settingsbutton = script.Parent.Parent.Parent.main.dropdown.settingsbutton
@@ -1688,8 +1709,8 @@ local function QWDMA_fake_script() -- settings.LocalScript
 		end
 	end)
 end
-coroutine.wrap(QWDMA_fake_script)()
-local function IHUL_fake_script() -- universal_2.LocalScript 
+coroutine.wrap(HSHCP_fake_script)()
+local function VHDOAC_fake_script() -- universal_2.LocalScript 
 	local script = Instance.new('LocalScript', universal_2)
 
 	local universal = script.Parent.Parent.Parent.main.dropdown.universal
@@ -1707,8 +1728,8 @@ local function IHUL_fake_script() -- universal_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(IHUL_fake_script)()
-local function VPEV_fake_script() -- close.LocalScript 
+coroutine.wrap(VHDOAC_fake_script)()
+local function FIPUBEH_fake_script() -- close.LocalScript 
 	local script = Instance.new('LocalScript', close)
 
 	local button = script.Parent
@@ -1739,8 +1760,8 @@ local function VPEV_fake_script() -- close.LocalScript
 		end
 	end)
 end
-coroutine.wrap(VPEV_fake_script)()
-local function TMULAOM_fake_script() -- tabs.drag 
+coroutine.wrap(FIPUBEH_fake_script)()
+local function IOZA_fake_script() -- tabs.drag 
 	local script = Instance.new('LocalScript', tabs)
 
 	local object = script.Parent
@@ -1748,4 +1769,4 @@ local function TMULAOM_fake_script() -- tabs.drag
 	object.Active = true
 	object.Draggable = true
 end
-coroutine.wrap(TMULAOM_fake_script)()
+coroutine.wrap(IOZA_fake_script)()
